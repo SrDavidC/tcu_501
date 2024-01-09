@@ -1,0 +1,10 @@
+.board_container {
+    text-align: center;
+    color: #0c67ae
+}
+
+.board {
+    width: 360px;
+    height: 360px;
+    background-color: lightblue;
+}
