@@ -3,8 +3,18 @@
     color: #0c67ae
 }
 
-.board {
-    width: 360px;
-    height: 360px;
+#board {
+    width: 373px;
+    height: 373px;
     background-color: lightblue;
+    border: 10px solid #0c67ae;
+    margin: 50px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 118px;
+    height: 118px;
+    border: 1px solid #0c67ae;
 }
