@@ -1,5 +1,3 @@
-
-
 let allowOnlyAdjacentMoves = false;
 
 let rows = 3;
@@ -33,40 +31,39 @@ window.onload = function () {
       tile.id = r.toString() + "-" + c.toString();
       tile.src = fullPath + imgOrder.shift() + ".jpg";
 
-      tile.addEventListener("dragstart", dragStart);  //click an image to drag
-      tile.addEventListener("dragover", dragOver);    //moving image around while clicked
-      tile.addEventListener("dragenter", dragEnter);  //dragging image onto another one
-      tile.addEventListener("dragleave", dragLeave);  //dragged image leaving anohter image
-      tile.addEventListener("drop", dragDrop);        //drag an image over another image, drop the image
-      tile.addEventListener("dragend", dragEnd);      //after drag drop, swap the two tiles
+      if (isMobileDevice()) {
+        tile.addEventListener("click", onClickTile)
+        console.log("dada");
+      } else {
+        tile.addEventListener("dragstart", dragStart);  //click an image to drag
+        tile.addEventListener("dragover", dragOver);    //moving image around while clicked
+        tile.addEventListener("dragenter", dragEnter);  //dragging image onto another one
+        tile.addEventListener("dragleave", dragLeave);  //dragged image leaving anohter image
+        tile.addEventListener("drop", dragDrop);        //drag an image over another image, drop the image
+        tile.addEventListener("dragend", dragEnd);      //after drag drop, swap the two tiles
+      }
+
 
       document.getElementById("board").append(tile);
     }
   }
 }
 
-function dragStart() {
-  currTile = this; // image to be dragged
-}
-
-function dragOver(e) {
-  e.preventDefault();
-}
-
-function dragEnter(e) {
-  e.preventDefault();
-}
-
-function dragLeave() {
-
-}
-
-function dragDrop() {
-  otherTile = this; // image to be dropped on
+function onClickTile() {
+  if (currTile == null) {
+    currTile = this;
+  } else {
+    otherTile = this;
+    swapTiles();
+    currTile = null;
+  }
 }
 
 function dragEnd() {
+  swapTiles();
+}
 
+function swapTiles() {
   let currCoords = currTile.id.split("-");
   let r = parseInt(currCoords[0]);
   let c = parseInt(currCoords[1]);
@@ -98,4 +95,28 @@ function dragEnd() {
 
   turns += 1;
   document.getElementById("turns").innerText = turns;
+}
+
+function dragStart() {
+  currTile = this; // image to be dragged
+}
+
+function dragOver(e) {
+  e.preventDefault();
+}
+
+function dragEnter(e) {
+  e.preventDefault();
+}
+
+function dragLeave() {
+
+}
+
+function dragDrop() {
+  otherTile = this; // image to be dropped on
+}
+
+function isMobileDevice() {
+  return window.innerWidth <= 768;
 }
