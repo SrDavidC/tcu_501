@@ -1,3 +1,4 @@
+import { shuffle, playWinSound } from "./Utils.js";
 let allowOnlyAdjacentMoves = false;
 
 let rows = 3;
@@ -13,13 +14,13 @@ let path = "images/slide_puzzle/"
 // let imgOrder = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 let imgOrder = ["4", "2", "8", "5", "1", "6", "7", "9", "3"];
 let imgCharacters =
-  ["juan_santamaria", "carmen_lyra", "shirley_cruz"];
+  ["juan_santamaria", "carmen_lyra", "shirley_cruz", "batman", "wonder_woman", "superman"];
 
 
 
 
 window.onload = function () {
-
+  shuffle(imgOrder);
   let randomIndex = Math.floor(Math.random() * imgCharacters.length);
   let character = imgCharacters[randomIndex];
   let fullPath = path + character + "/";
@@ -30,10 +31,9 @@ window.onload = function () {
       let tile = document.createElement("img");
       tile.id = r.toString() + "-" + c.toString();
       tile.src = fullPath + imgOrder.shift() + ".jpg";
-
+      tile.classList.add("board_tile");
       if (isMobileDevice()) {
         tile.addEventListener("click", onClickTile)
-        console.log("dada");
       } else {
         tile.addEventListener("dragstart", dragStart);  //click an image to drag
         tile.addEventListener("dragover", dragOver);    //moving image around while clicked
@@ -42,8 +42,6 @@ window.onload = function () {
         tile.addEventListener("drop", dragDrop);        //drag an image over another image, drop the image
         tile.addEventListener("dragend", dragEnd);      //after drag drop, swap the two tiles
       }
-
-
       document.getElementById("board").append(tile);
     }
   }
@@ -58,11 +56,24 @@ function onClickTile() {
     swapTiles();
     currTile.style.boxShadow = "none";
     currTile = null;
+
+    handleWin();
+  }
+}
+
+function handleWin() {
+  let isWinner = checkWinner();
+  if (isWinner) {
+    console.log("Ganaste!!");
+    playWinSound();
+
   }
 }
 
 function dragEnd() {
   swapTiles();
+
+  handleWin();
 }
 
 function swapTiles() {
@@ -97,6 +108,25 @@ function swapTiles() {
 
   turns += 1;
   document.getElementById("turns").innerText = turns;
+}
+
+function checkWinner() {
+  const board =  document.getElementById("board");
+  let tiles = board.getElementsByClassName("board_tile");
+  let isWinner = true;
+  // console.log(tiles);
+  for (let i = 0; i < tiles.length - 1; i++) {
+    let src = tiles[i].src;
+    let number = parseInt(src.substring(src.length - 5,src.length - 4))
+    let nextNumber = parseInt (tiles[i+1].src.substring(src.length - 5,src.length - 4));
+    // console.log(number);
+    if (number > nextNumber) {
+      isWinner = false;
+      break;
+    }
+  }
+  // console.log("\n");
+  return isWinner;
 }
 
 function dragStart() {
