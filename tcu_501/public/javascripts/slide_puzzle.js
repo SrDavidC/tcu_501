@@ -13,7 +13,7 @@ let path = "images/slide_puzzle/"
 // let imgOrder = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 let imgOrder = ["4", "2", "8", "5", "1", "6", "7", "9", "3"];
 let imgCharacters =
-  ["juan_santamaria", "doraemon"];
+  ["juan_santamaria", "carmen_lyra", "shirley_cruz"];
 
 
 
@@ -52,9 +52,11 @@ window.onload = function () {
 function onClickTile() {
   if (currTile == null) {
     currTile = this;
+    currTile.style.boxShadow = "0 0 20px #00f";
   } else {
     otherTile = this;
     swapTiles();
+    currTile.style.boxShadow = "none";
     currTile = null;
   }
 }
