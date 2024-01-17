@@ -87,6 +87,9 @@ function dragEnd() {
 }
 
 function showWinModal() {
+  $('#WinModalCenter').on('click', 'button.close', function (eventObject) {
+    $('#WinModalCenter').modal('hide');
+  });
   $('#WinModalCenter').modal('show');
 }
 
@@ -100,11 +103,11 @@ function swapTiles() {
   let c2 = parseInt(otherCoords[1]);
 
 
-  let moveLeft = r == r2 && c2 == c-1;
-  let moveRight = r == r2 && c2 == c+1;
+  let moveLeft = r === r2 && c2 === c-1;
+  let moveRight = r === r2 && c2 === c+1;
 
-  let moveUp = c == c2 && r2 == r-1;
-  let moveDown = c == c2 && r2 == r+1;
+  let moveUp = c === c2 && r2 === r-1;
+  let moveDown = c === c2 && r2 === r+1;
 
   let isAdjacent = moveRight || moveDown || moveLeft || moveUp;
 

@@ -8,7 +8,7 @@ block content
         div.board#board
         h1.turns Turns:
             span.turns#turns 0
-    .modal.fade#WinModalCenter(tabindex="-1", role="dialog", aria-labelledby="WinModalCenter", aria-hidden="true" data-backdrop="static")
+    .modal.fade#WinModalCenter(tabindex="-1", role="dialog", aria-labelledby="WinModalCenter", aria-hidden="true", data-backdrop="static")
         .modal-dialog.modal-dialog-centered(role="document")
             .modal-content
                 .modal-header
@@ -17,7 +17,7 @@ block content
                         span(aria-hidden="true") &times;
                 .modal-body
                 .modal-footer
-                    button.btn.btn-secondary.m-auto(type="button", data-dismiss="modal") Close
+                    button.btn.btn-secondary.m-auto.close(type="button", data-dismiss="modal") Close
 
 
     script(type="module" src='/javascripts/slide_puzzle.js')
