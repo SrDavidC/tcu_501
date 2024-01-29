@@ -10,5 +10,9 @@ router.get('/slide-puzzle', function(req, res, next) {
   res.render('slide_puzzle', { title: 'Slide Puzzle'});
 });
 
+router.get('/wordle', function(req, res, next) {
+  res.render('wordle', { title: 'Wordle'});
+});
+
 
 module.exports = router;
