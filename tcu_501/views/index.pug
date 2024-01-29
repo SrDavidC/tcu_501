@@ -5,14 +5,7 @@ block content
     div.game_container
       div.game_header
         h1 Who is that Famous? Slide Puzzle
-      div.game_image_container
-        img.game_logo(src="", alt="Imagen de un juego")
-
-  div.games_container
-    div.game_container
-      div.game_header
-        h1 Build your own hero!
-      div.game_image_container
+      div.game_image_container#slide-go-btn
         img.game_logo(src="", alt="Imagen de un juego")
 
   div.games_container
@@ -20,4 +13,6 @@ block content
       div.game_header
         h1 Wordle
       div.game_image_container
-        img.game_logo(src="", alt="Imagen de un juego")
+        img.game_logo#wordle-go-btn(src="", alt="Imagen de un juego")
+
+  script(type="module" src='/javascripts/index.js')
