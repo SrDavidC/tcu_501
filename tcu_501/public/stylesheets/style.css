@@ -71,3 +71,38 @@ a {
   cursor: pointer;
   transform: scale(1.1);
 }
+
+.modal-title {
+  text-align: center;
+  margin: auto;
+}
+
+#modal-winner-body p{
+  margin: auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.btn-newgame {
+  background-color: #FC5C5C;
+}
+
+.btn-newgame:hover {
+  background-color: #f17d7d;
+}
+
+.btns-container > * {
+  margin: 30px;
+}
+.btn-instructions {
+  background-color: #44A49C;
+}
+
+.footer {
+  background-color: #44A49C;
+}
+
+.footer img {
+  height: 10%;
+  width: 10%;
+}
