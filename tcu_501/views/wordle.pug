@@ -1,0 +1,47 @@
+extends layout
+
+block content
+    head
+        link(rel='stylesheet', href='/stylesheets/slide_puzzle.css')
+
+    .modal.fade#WinModalCenter(tabindex="-1", role="dialog", aria-labelledby="WinModalCenter", aria-hidden="true", data-backdrop="static")
+        .modal-dialog.modal-dialog-centered(role="document")
+            .modal-content
+                .modal-header
+                    h5.modal-title#exampleModalLongTitle Congratulations! You won! 🥳
+                        span(aria-hidden="true")
+                .modal-body#modal-winner-body
+                .modal-footer
+                    button.btn.btn-secondary.m-auto.close(type="button", data-dismiss="modal") Close
+
+    .modal.fade#instructions-modal(tabindex="-1", role="dialog", aria-labelledby="instructions-modal", aria-hidden="true", data-backdrop="static")
+        .modal-dialog.modal-dialog-centered(role="document")
+            .modal-content
+                .modal-header
+                    h5.modal-title Instructions 📝
+                        span(aria-hidden="true")
+                .modal-body
+                    h6 English:
+                    ol(type="1")
+                        li Observe the Image: Examine the 3x3 matrix containing parts of a disarranged image.
+                        li Arrange the Image: Begin arranging the image by placing each piece in its correct position. You can only move pieces to the empty space, i.e., the white piece.
+                        li Confirm Your Choice: To move pieces on a computer, drag the piece to the white space. If using a mobile device, select the piece you want to move and then choose the white piece.
+                        li You will find relevant information about the hero displayed on the screen and once you successfully arrange the image correctly as well.
+                    h6 Español
+                    ol(type="1")
+                        li Observa la Imagen: la matriz 3x3 la cual contendrá partes de una imagen desordenada
+                        li Ordena de la imagen: Comienza a ordenar la imagen colocando cada pieza en su lugar, solo podrás mover piezas hacia la vacía, es decir, la pieza blanca.
+                        li Confirma la elección: Para mover piezas si usas una computadora arrastra la pieza hasta la pieza blanca.
+                            Si usas un dispositivo móvil selecciona la pieza que quieras mover y luego selecciona la pieza blanca.
+                        li Encontrarás información relevante acerca del héroe en la pantalla mostrada y también una vez logres acomodar la imagen de manera correcta.
+                .modal-footer
+                    button.btn.btn-secondary.m-auto.close(type="button", data-dismiss="modal") Close
+
+    footer.bg-body-tertiary.text-center.text-lg-start.footer
+        div(class="text-center p-3 footer")
+            img(src="images/logoTCU501.png")
+            img(src="images/ucr_logo.png")
+            img(src="images/tculogo.png")
+
+
+    script(type="module" src='/javascripts/wordle.js')
