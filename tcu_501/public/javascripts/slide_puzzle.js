@@ -1,9 +1,7 @@
 import { shuffle, playWinSound } from "./Utils.js";
 import { CharacterSP} from "./Objects/CharacterSP.js";
-// const bootstrap = require('bootstrap');
 
 let allowOnlyAdjacentMoves = false;
-
 let rows = 3;
 let columns = 3;
 
@@ -18,20 +16,15 @@ let path = "images/slide_puzzle/"
 let imgOrder = ["4", "2", "8", "5", "1", "6", "7", "9", "3"];
 const imgCharacters =
   ["juan_santamaria", "carmen_lyra", "shirley_cruz", "batman", "wonder_woman", "superman"];
+let characterSelected = "";
 const characters_map = new Map();
-
-
-
-
-
-
-
 
 window.onload = function () {
   initCharactersMap();
   shuffle(imgOrder);
   let randomIndex = Math.floor(Math.random() * imgCharacters.length);
   let character = imgCharacters[randomIndex];
+  characterSelected = characters_map.get(character);
   let fullPath = path + character + "/";
   // tcu_501/public/images/slide_puzzle/juan_santamaria/1.jpg
   for (let r = 0; r < rows; r++) {
@@ -55,6 +48,10 @@ window.onload = function () {
     }
   }
 }
+
+document.getElementById("btn-newgame")?.addEventListener("click", () =>{
+  location.reload();
+})
 
 function onClickTile() {
   if (currTile == null) {
@@ -82,7 +79,7 @@ function handleWin() {
 
 function dragEnd() {
   swapTiles();
-  showWinModal();
+  // showWinModal();
   handleWin();
 }
 
@@ -90,8 +87,30 @@ function showWinModal() {
   $('#WinModalCenter').on('click', 'button.close', function (eventObject) {
     $('#WinModalCenter').modal('hide');
   });
+  const modalBody = document.getElementById("modal-winner-body");
+
   $('#WinModalCenter').modal('show');
+  let textBody = document.createElement("p");
+  textBody.classList.add("textBody");
+  textBody.innerHTML += `<h2> You discovered the image of ${characterSelected.name}</h2> <br>`;
+  textBody.innerHTML += `This is some information about this famous <br>`;
+
+  for (let i = 0; i < characterSelected.description.length ; i++) {
+    textBody.innerHTML += `${characterSelected.description[i]} <br>`;
+  }
+
+  modalBody.append(textBody);
 }
+
+document.getElementById("btn-instructions")?.addEventListener("click", () => {
+  $('#instructions-modal').on('click', 'button.close', function (eventObject) {
+    $('#instructions-modal').modal('hide');
+  });
+
+  $('#instructions-modal').modal('show');
+
+})
+
 
 function swapTiles() {
   let currCoords = currTile.id.split("-");
@@ -180,27 +199,27 @@ function initCharactersMap() {
   " the \"Little Drummer Boy\".\n", "He is brave.", "Juan Santamaría was successful in his mission and his actions helped" +
   " Costa Ricans win the battle, Santamaria was killed by enemy fire.\n"]))
 
-  characters_map.set("carmen_lyra", [
+  characters_map.set("carmen_lyra", new CharacterSP("Carmen Lyra", [
     "María Isabel Carvajal (Carmen Lyra) was a writer.",
     "She wrote and published the fairy tale collection Cuentos de mi tía Panchita and was the first female Costa Rican writer. \n"
   , "She was an intellectual, smart, brave and visionary woman.\n",
-    "Carmen Lyra’s face is on the 20000 colones bill.\n"] )
+    "Carmen Lyra’s face is on the 20000 colones bill.\n"] ))
 
-  characters_map.set("shirley_cruz", [
+  characters_map.set("shirley_cruz", new CharacterSP ("Shirley Cruz",[
     "Shirley Cruz Traña was born on August 28, 1985, in San José, Costa Rica. She is a Costa Rican soccer player.",
     "She currently plays in the Chinese club Jiangsu Suning of the Chinese Women’s Super League.",
     "She was the first female professional soccer player in Costa Rica and is the most successful Central American player as a professional soccer player.",
     "She is an extraordinary athlete, strong, disciplined, confident and hard working. She is a leader."
-  ])
+  ]))
 
-  characters_map.set("superman", [
+  characters_map.set("superman", new CharacterSP("Superman", [
     "Superman is a superhero.",
     "He comes from a place called Krypton. His real name is Clark Kent.",
     "He can fly, be super strong, and really fast.",
     "Superman is a good guy who helps people",
-  ])
+  ]))
 
-  characters_map.set("batman", [
+  characters_map.set("batman", new CharacterSP ("Batman", [
     "Bruce Wayne was born in a big city called Gotham City.",
     "He is born in a wealthy family.",
     "When he is a child, criminals killed his parents. He promises to take revenge.",
@@ -208,15 +227,17 @@ function initCharactersMap() {
     "He develops special weapons to fight all criminals at Gotham city as well as mental and physical abilities.",
     "He is very smart and can solve all types of riddles.",
     "He can fly like bats; he has a lot of physical strength and ability to fight the villains."
-  ])
+  ]))
 
-  characters_map.set("wonder_woman", [
+  characters_map.set("wonder_woman", new CharacterSP( "Wonder Woman", [
     "Wonder Woman’s real name is Princess Diana.",
     "She is a descendent of the mythical Amazon Women of Greece. Princess Diana is the daughter of Zeus.",
     "Wonder Woman is immortal, this means she cannot die.",
     "She wears bulletproof bracelets.",
     "She also has great strength and speed.",
     "Wonder Woman’s most special fighting tool is her Lasso of Truth. If she wraps this rope around a person and asks them questions, they tell the truth."
-  ])
+  ]))
+
+  console.log(characters_map)
 
 }
