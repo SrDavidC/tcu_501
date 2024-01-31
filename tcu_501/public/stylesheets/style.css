@@ -98,6 +98,10 @@ a {
   background-color: #44A49C;
 }
 
+.btn-instructions:hover {
+  background-color: #89d3cd;
+}
+
 .footer {
   background-color: #44A49C;
 }

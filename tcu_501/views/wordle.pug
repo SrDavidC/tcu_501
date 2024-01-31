@@ -4,7 +4,11 @@ block content
     head
         link(rel='stylesheet', href='/stylesheets/wordle.css')
 
-    div#game
+    div.game_container
+        div#game
+        div.container.btns-container
+            button.btn.btn-primary.btn-newgame#btn-newgame(type="button") New Game
+            button.btn.btn-primary.btn-instructions#btn-instructions(type="button") Instructions
 
     .modal.fade#WinModalCenter(tabindex="-1", role="dialog", aria-labelledby="WinModalCenter", aria-hidden="true", data-backdrop="static")
         .modal-dialog.modal-dialog-centered(role="document")
@@ -25,17 +29,22 @@ block content
                 .modal-body
                     h6 English:
                     ol(type="1")
-                        li Observe the Image: Examine the 3x3 matrix containing parts of a disarranged image.
-                        li Arrange the Image: Begin arranging the image by placing each piece in its correct position. You can only move pieces to the empty space, i.e., the white piece.
-                        li Confirm Your Choice: To move pieces on a computer, drag the piece to the white space. If using a mobile device, select the piece you want to move and then choose the white piece.
-                        li You will find relevant information about the hero displayed on the screen and once you successfully arrange the image correctly as well.
-                    h6 Español
+                        li The goal is to guess a five-letter secret word.
+                        li How to guess? Enter five-letter words in the provided text box.
+                        li Click "Accept" or press "Enter" to submit the typed word.
+                        li After each attempt, you will receive clues about the secret word. Correct letters in the correct position will be displayed in green.
+                        Correct letters but in the wrong position will be indicated in yellow.
+                        li There is a limited number of 7 attempts.
+                        li To play again press the button "New Game"
+
+                    h6 Español:
                     ol(type="1")
-                        li Observa la Imagen: la matriz 3x3 la cual contendrá partes de una imagen desordenada
-                        li Ordena de la imagen: Comienza a ordenar la imagen colocando cada pieza en su lugar, solo podrás mover piezas hacia la vacía, es decir, la pieza blanca.
-                        li Confirma la elección: Para mover piezas si usas una computadora arrastra la pieza hasta la pieza blanca.
-                            Si usas un dispositivo móvil selecciona la pieza que quieras mover y luego selecciona la pieza blanca.
-                        li Encontrarás información relevante acerca del héroe en la pantalla mostrada y también una vez logres acomodar la imagen de manera correcta.
+                        li El objetivo es adivinar una palabra secreta de cinco letras.
+                        li Haz clic en "Aceptar" o presiona "Enter" para enviar la palabra escrita.
+                        li Después de cada intento, recibirás pistas sobre la palabra secreta. Las letras correctas en la posición correcta se mostrarán de color verde.
+                        Las letras correctas pero en la posición incorrecta se indicarán de color amarillo.
+                        li Hay un número limitado de 7 intentos
+                        li Si deseas jugar otra partida selecciona el botón de "New Game"
                 .modal-footer
                     button.btn.btn-secondary.m-auto.close(type="button", data-dismiss="modal") Close
 

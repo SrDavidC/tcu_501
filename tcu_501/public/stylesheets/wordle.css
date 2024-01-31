@@ -5,6 +5,11 @@
     --right: #538d4e;
 }
 
+.btns-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #game {
     display: grid;

@@ -1,7 +1,10 @@
-const dictionary = ['earth', "plane", "crane", "audio", "house"];
+import { testDictionary, realDictionary} from "./Objects/dictionary.js";
+import { sixth_grade_unit_1} from "./Objects/vocabularyPool.js";
 
+const dictionary = realDictionary;
+const vocabularyPool = sixth_grade_unit_1;
 const state = {
-  secret: dictionary[Math.floor(Math.random() * dictionary.length)],
+  secret: vocabularyPool[Math.floor(Math.random() * vocabularyPool.length)],
   grid: Array(6)
     .fill()
     .map(() => Array(5).fill('')),
@@ -171,5 +174,39 @@ function startup() {
 
   console.log(state.secret);
 }
+
+document.getElementById("btn-newgame")?.addEventListener("click", () =>{
+  location.reload();
+})
+
+function showWinModal() {
+  $('#WinModalCenter').on('click', 'button.close', function (eventObject) {
+    $('#WinModalCenter').modal('hide');
+  });
+  const modalBody = document.getElementById("modal-winner-body");
+
+  $('#WinModalCenter').modal('show');
+  let textBody = document.createElement("p");
+  textBody.classList.add("textBody");
+  textBody.innerHTML += `<h2> You discovered the image of ${characterSelected.name}</h2> <br>`;
+  textBody.innerHTML += `This is some information about this famous <br>`;
+
+  for (let i = 0; i < characterSelected.description.length ; i++) {
+    textBody.innerHTML += `${characterSelected.description[i]} <br>`;
+  }
+
+  modalBody.append(textBody);
+}
+
+document.getElementById("btn-instructions")?.addEventListener("click", () => {
+  $('#instructions-modal').on('click', 'button.close', function (eventObject) {
+    $('#instructions-modal').modal('hide');
+  });
+
+  $('#instructions-modal').modal('show');
+
+})
+
+
 
 startup();
