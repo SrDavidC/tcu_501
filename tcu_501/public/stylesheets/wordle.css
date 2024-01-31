@@ -57,6 +57,41 @@
 .animated {
     animation: flip 0.5s ease;
 }
+.keyboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.keyboard-row {
+    display: flex;
+    gap: 5px;
+}
+
+.key {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.key[data-key="Enter"],
+.key[data-key="Backspace"] {
+    width: 80px;
+}
+
+@media (max-width: 600px) {
+    .key {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
 
 @keyframes flip {
     0% {

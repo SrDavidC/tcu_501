@@ -198,6 +198,20 @@ document.getElementById("btn-instructions")?.addEventListener("click", () => {
 
 })
 
+document.addEventListener('DOMContentLoaded', function () {
+  const keys = document.querySelectorAll('.key');
+
+  keys.forEach(key => {
+    key.addEventListener('click', function () {
+      const keyValue = key.dataset.key;
+
+      // Simular evento de teclado al hacer clic en la tecla virtual
+      const keyboardEvent = new KeyboardEvent('keydown', { key: keyValue });
+      document.body.dispatchEvent(keyboardEvent);
+    });
+  });
+});
+
 
 
 startup();
