@@ -1,0 +1,15 @@
+export const sixth_grade_unit_1 = [
+  "brave",
+  "funny",
+  "honor",
+  "smart",
+  "super",
+  "saved",
+  "fight",
+  "human",
+  "speed",
+  "great",
+  "crime",
+  "sense",
+  "shoot",
+]
