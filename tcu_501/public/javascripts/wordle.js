@@ -50,6 +50,7 @@ function isValidWord(word) {
   return dictionary.includes(word);
 }
 
+
 function revealWord(guess) {
   const row = state.currentRow;
 
@@ -77,6 +78,22 @@ function revealWord(guess) {
 
 }
 
+function addLetter(letter) {
+  if (state.currentCol === 5) return;
+  state.grid[state.currentRow][state.currentCol] = letter;
+  state.currentCol++;
+}
+
+function removeLetter() {
+  if (state.currentCol === 0) return;
+  state.grid[state.currentRow][state.currentCol - 1] = '';
+  state.currentCol--;
+}
+
+function isLetter(key) {
+  return key.length === 1 && key.match(/[a-z]/i);
+}
+
 function registerKeyboardEvents() {
   document.body.onkeydown = (e) => {
    const key = e.key;
@@ -84,7 +101,7 @@ function registerKeyboardEvents() {
    if (key === 'Enter') {
      if (state.currentCol === 5) {
        const word = getCurrentWord();
-       if (isWordValid(word)) {
+       if (isValidWord(word)) {
          revealWord(word);
          state.currentRow++;
          state.currentCol = 0;
@@ -110,6 +127,10 @@ function registerKeyboardEvents() {
 function startup() {
   const game = document.getElementById("game");
   drawGrid(game);
+
+  registerKeyboardEvents();
+
+  console.log(state.secret);
 }
 
 startup();
