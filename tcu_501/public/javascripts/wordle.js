@@ -114,9 +114,9 @@ function revealWord(guess) {
 
   setTimeout(() => {
     if (isWinner) {
-      alert('Congratulations!');
+      showWinModal("Congratulations! Yow discovered the word 🥳! ")
     } else if (isGameOver) {
-      alert(`Better luck next time! The word was ${state.secret}.`);
+      showWinModal(`Better luck next time! The word was ${state.secret}.`);
     }
   }, 3 * animation_duration);
 }
@@ -179,23 +179,14 @@ document.getElementById("btn-newgame")?.addEventListener("click", () =>{
   location.reload();
 })
 
-function showWinModal() {
+function showWinModal(text) {
   $('#WinModalCenter').on('click', 'button.close', function (eventObject) {
     $('#WinModalCenter').modal('hide');
   });
-  const modalBody = document.getElementById("modal-winner-body");
-
+  const modalTitle = document.getElementById("FinalModalTitle");
+  modalTitle.textContent = text;
   $('#WinModalCenter').modal('show');
-  let textBody = document.createElement("p");
-  textBody.classList.add("textBody");
-  textBody.innerHTML += `<h2> You discovered the image of ${characterSelected.name}</h2> <br>`;
-  textBody.innerHTML += `This is some information about this famous <br>`;
 
-  for (let i = 0; i < characterSelected.description.length ; i++) {
-    textBody.innerHTML += `${characterSelected.description[i]} <br>`;
-  }
-
-  modalBody.append(textBody);
 }
 
 document.getElementById("btn-instructions")?.addEventListener("click", () => {
