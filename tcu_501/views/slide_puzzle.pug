@@ -4,13 +4,15 @@ block content
     head
         link(rel='stylesheet', href='/stylesheets/slide_puzzle.css')
 
-    div.board_container
-        div.board#board
-        h1.turns Turns:
-            span.turns#turns 0
-        div.container.btns-container
-            button.btn.btn-primary.btn-newgame#btn-newgame(type="button") New Game
-            button.btn.btn-primary.btn-instructions#btn-instructions(type="button") Instructions
+    div.game_container
+        div.board_container
+            div.board#board
+            h1.turns Turns:
+
+                span.turns#turns 0
+            div.container.btns-container
+                button.btn.btn-primary.btn-newgame#btn-newgame(type="button" disabled=true) New Game
+                button.btn.btn-primary.btn-instructions#btn-instructions(type="button") Instructions
 
     .modal.fade#WinModalCenter(tabindex="-1", role="dialog", aria-labelledby="WinModalCenter", aria-hidden="true", data-backdrop="static")
         .modal-dialog.modal-dialog-centered(role="document")
@@ -50,6 +52,7 @@ block content
             img(src="images/logoTCU501.png")
             img(src="images/ucr_logo.png")
             img(src="images/tculogo.png")
+            img(src="images/elm_logo.png")
 
 
     script(type="module" src='/javascripts/slide_puzzle.js')
