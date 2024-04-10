@@ -88,6 +88,13 @@ function showWinModal() {
     $('#WinModalCenter').modal('hide');
   });
   const modalBody = document.getElementById("modal-winner-body");
+  const textBodyElements = modalBody.children
+  const textBodyArray = Array.from(textBodyElements);
+
+  for (let element of textBodyArray) {
+    element.parentNode.removeChild(element);
+  }
+
 
   $('#WinModalCenter').modal('show');
   let textBody = document.createElement("p");
@@ -100,6 +107,7 @@ function showWinModal() {
   }
 
   modalBody.append(textBody);
+  document.getElementById('btn-newgame').disable = false;
 }
 
 document.getElementById("btn-instructions")?.addEventListener("click", () => {
