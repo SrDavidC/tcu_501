@@ -88,6 +88,7 @@ function showWinModal() {
     $('#WinModalCenter').on('click', 'button.close', function (eventObject) {
         $('#WinModalCenter').modal('hide');
     });
+    document.getElementById('btn-close').disabled = true;
     const modalBody = document.getElementById("modal-winner-body");
     const textBodyElements = modalBody.children
     const textBodyArray = Array.from(textBodyElements);
@@ -109,7 +110,7 @@ function showWinModal() {
     modalBody.append(textBody);
     characterSelected.playAudio().then(() => {
         document.getElementById('btn-newgame').disabled = false;
-        document.getElementById('close-btn').disabled = false;
+        document.getElementById('btn-close').disabled = false;
     });
 }
 
