@@ -17,7 +17,18 @@ export function shuffle(array) {
 }
 
 export function playWinSound() {
-  let audio = new Audio("sounds/win.mp3");
-  audio.play();
+  return new Promise((resolve, reject) => {
+    let audio = new Audio("sounds/win.mp3");
+
+    audio.addEventListener('ended', () => {
+      resolve();
+    });
+
+    audio.addEventListener('error', (error) => {
+      reject(error);
+    });
+
+    audio.play();
+  });
 }
 

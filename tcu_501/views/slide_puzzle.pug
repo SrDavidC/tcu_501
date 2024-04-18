@@ -14,7 +14,7 @@ block content
                 button.btn.btn-primary.btn-newgame#btn-newgame(type="button" disabled=true) New Game
                 button.btn.btn-primary.btn-instructions#btn-instructions(type="button") Instructions
 
-    .modal.fade#WinModalCenter(tabindex="-1", role="dialog", aria-labelledby="WinModalCenter", aria-hidden="true", data-backdrop="static")
+    .modal.fade#WinModalCenter(tabindex="-1", role="dialog", aria-labelledby="WinModalCenter", aria-hidden="true", data-backdrop="static" data-bs-backdrop="static")
         .modal-dialog.modal-dialog-centered(role="document")
             .modal-content
                 .modal-header
@@ -22,7 +22,7 @@ block content
                         span(aria-hidden="true")
                 .modal-body#modal-winner-body
                 .modal-footer
-                    button.btn.btn-secondary.m-auto.close(type="button", data-dismiss="modal") Close
+                    button.btn.btn-secondary.m-auto.close#btn-close(type="button", data-dismiss="modal" disabled=true ) Close
 
     .modal.fade#instructions-modal(tabindex="-1", role="dialog", aria-labelledby="instructions-modal", aria-hidden="true", data-backdrop="static")
         .modal-dialog.modal-dialog-centered(role="document")
