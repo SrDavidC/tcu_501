@@ -25,6 +25,17 @@ block content
                 .modal-footer
                     button.btn.btn-secondary.m-auto.close(type="button", data-dismiss="modal") Close
 
+
+    .modal.fade#HintModalCenter(tabindex="-1", role="dialog", aria-labelledby="HintModalCenter", aria-hidden="true", data-backdrop="static")
+        .modal-dialog.modal-dialog-centered(role="document")
+            .modal-content
+                .modal-header
+                    h5.modal-title Hint for the word
+                        span(aria-hidden="true")
+                .modal-body#modal-hint-body
+                .modal-footer
+                    button.btn.btn-secondary.m-auto.close(type="button", data-dismiss="modal") Close
+
     .modal.fade#instructions-modal(tabindex="-1", role="dialog", aria-labelledby="instructions-modal", aria-hidden="true", data-backdrop="static")
         .modal-dialog.modal-dialog-centered(role="document")
             .modal-content

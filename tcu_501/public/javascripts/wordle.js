@@ -1,10 +1,12 @@
 import { testDictionary, realDictionary} from "./Objects/dictionary.js";
 import { sixth_grade_unit_1} from "./Objects/vocabularyPool.js";
+import {HINT_LENGHT} from "./constants/wordle.js";
+import {shuffle} from "./Utils";
 
 const dictionary = realDictionary;
 const vocabularyPool = sixth_grade_unit_1;
 const state = {
-  secret: vocabularyPool[Math.floor(Math.random() * vocabularyPool.length)],
+  secret: getRandomWordFromVocabularyPool(),
   grid: Array(6)
     .fill()
     .map(() => Array(5).fill('')),
@@ -205,13 +207,48 @@ document.addEventListener('DOMContentLoaded', function () {
     key.addEventListener('click', function () {
       const keyValue = key.dataset.key;
 
-      // Simular evento de teclado al hacer clic en la tecla virtual
       const keyboardEvent = new KeyboardEvent('keydown', { key: keyValue });
       document.body.dispatchEvent(keyboardEvent);
     });
   });
 });
 
+function showHintModal() {
+  $('#HintModalCenter').on('click', 'button.close', function (eventObject) {
+    $('#WinModalCenter').modal('hide');
+  });
+  $('#WinModalCenter').modal('show');
+}
 
+function populateHintModal() {
+  const modalBody = document.getElementById("modal-winner-body");
+
+  let posibleWords = [state.secret];
+  while (posibleWords.length < HINT_LENGHT) {
+    let word = getRandomWordFromVocabularyPool();
+    if (!posibleWords.includes(word)) {
+      posibleWords.push(word);
+    }
+  }
+  shuffle(posibleWords);
+
+  for (let element in posibleWords) {
+    let textBody = document.createElement("p");
+    textBody.classList.add("textBody");
+    textBody.innerHTML += `<h2> You discovered the image of ${characterSelected.name}</h2> <br>`;
+    textBody.innerHTML += `This is some information about this famous <br>`;
+  }
+
+
+  for (let i = 0; i < characterSelected.description.length ; i++) {
+    textBody.innerHTML += `${characterSelected.description[i]} <br>`;
+  }
+
+  modalBody.append(textBody);
+}
+
+function getRandomWordFromVocabularyPool() {
+  return vocabularyPool[Math.floor(Math.random() * vocabularyPool.length)];
+}
 
 startup();
