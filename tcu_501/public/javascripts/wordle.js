@@ -1,7 +1,7 @@
 import { testDictionary, realDictionary} from "./Objects/dictionary.js";
 import { sixth_grade_unit_1} from "./Objects/vocabularyPool.js";
 import {HINT_LENGHT} from "./constants/wordle.js";
-import {shuffle} from "./Utils";
+import {shuffle} from "./Utils.js";
 
 const dictionary = realDictionary;
 const vocabularyPool = sixth_grade_unit_1;
@@ -181,6 +181,10 @@ document.getElementById("btn-newgame")?.addEventListener("click", () =>{
   location.reload();
 })
 
+document.getElementById("btn-hints")?.addEventListener("click", () =>{
+  showHintModal();
+})
+
 function showWinModal(text) {
   $('#WinModalCenter').on('click', 'button.close', function (eventObject) {
     $('#WinModalCenter').modal('hide');
@@ -215,9 +219,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function showHintModal() {
   $('#HintModalCenter').on('click', 'button.close', function (eventObject) {
-    $('#WinModalCenter').modal('hide');
+    $('#HintModalCenter').modal('hide');
   });
-  $('#WinModalCenter').modal('show');
+  $('#HintModalCenter').modal('show');
 }
 
 function populateHintModal() {
