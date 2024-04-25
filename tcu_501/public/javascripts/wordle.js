@@ -174,6 +174,8 @@ function startup() {
 
   registerKeyboardEvents();
 
+  populateHintModal();
+
   console.log(state.secret);
 }
 
@@ -225,7 +227,7 @@ function showHintModal() {
 }
 
 function populateHintModal() {
-  const modalBody = document.getElementById("modal-winner-body");
+  const modalBody = document.getElementById("modal-hint-body");
 
   let posibleWords = [state.secret];
   while (posibleWords.length < HINT_LENGHT) {
@@ -235,18 +237,20 @@ function populateHintModal() {
     }
   }
   shuffle(posibleWords);
-
+  let textBody = document.createElement("p");
+  textBody.classList.add("textBody")
   for (let element in posibleWords) {
-    let textBody = document.createElement("p");
-    textBody.classList.add("textBody");
-    textBody.innerHTML += `<h2> You discovered the image of ${characterSelected.name}</h2> <br>`;
-    textBody.innerHTML += `This is some information about this famous <br>`;
+    console.log(posibleWords[element])
+    textBody.innerHTML += posibleWords[element] + "<br>";
   }
 
-
+/*
   for (let i = 0; i < characterSelected.description.length ; i++) {
     textBody.innerHTML += `${characterSelected.description[i]} <br>`;
   }
+
+ */
+  console.log(posibleWords);
 
   modalBody.append(textBody);
 }
