@@ -260,7 +260,7 @@ function populateHintModal() {
 }
 
 function getRandomWordFromVocabularyPool() {
-  return vocabularyPool[Math.floor(Math.random() * vocabularyPool.length)];
+  return vocabularyPool[Math.floor(Math.random() * vocabularyPool.length)].word;
 }
 
 window.addEventListener("load", () => {
