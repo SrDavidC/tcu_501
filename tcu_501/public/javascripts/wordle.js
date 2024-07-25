@@ -87,7 +87,7 @@ function revealWord(guess) {
     const box = document.getElementById(`box${row}${i}`);
     const letter = box.textContent.toLowerCase();
     const numOfOccurrencesSecret = getNumOfOccurrencesInWord(
-      state.secret,
+      state.secret.word,
       letter
     );
     const numOfOccurrencesGuess = getNumOfOccurrencesInWord(guess, letter);
@@ -100,9 +100,9 @@ function revealWord(guess) {
       ) {
         box.classList.add('empty');
       } else {
-        if (letter === state.secret[i]) {
+        if (letter === state.secret.word[i]) {
           box.classList.add('right');
-        } else if (state.secret.includes(letter)) {
+        } else if (state.secret.word.includes(letter)) {
           box.classList.add('wrong');
         } else {
           box.classList.add('empty');
@@ -114,14 +114,14 @@ function revealWord(guess) {
     box.style.animationDelay = `${(i * animation_duration) / 2}ms`;
   }
 
-  const isWinner = state.secret.toLowerCase() === guess.toLowerCase();
+  const isWinner = state.secret.word.toLowerCase() === guess.toLowerCase();
   const isGameOver = state.currentRow === ROWS_COUNT - 1;
 
   setTimeout(() => {
     if (isWinner) {
       showWinModal("Congratulations! Yow discovered the word 🥳! ")
     } else if (isGameOver) {
-      showWinModal(`Better luck next time! The word was ${state.secret}.`);
+      showWinModal(`Better luck next time! The word was ${state.secret.word}.`);
     }
   }, 3 * animation_duration);
 }
@@ -180,7 +180,7 @@ function startup() {
 
   populateHintModal();
 
-  console.log(state.secret);
+  console.log(state.secret.word);
 }
 
 document.getElementById("btn-newgame")?.addEventListener("click", () =>{
@@ -232,6 +232,7 @@ function showHintModal() {
 
 function populateHintModal() {
   const modalBody = document.getElementById("modal-hint-body");
+  modalBody.innerHTML = '';
 
   let posibleWords = [state.secret];
   while (posibleWords.length < HINT_LENGHT) {
@@ -241,26 +242,52 @@ function populateHintModal() {
     }
   }
   shuffle(posibleWords);
-  let textBody = document.createElement("p");
-  textBody.classList.add("textBody")
-  for (let element in posibleWords) {
-    console.log(posibleWords[element])
-    textBody.innerHTML += posibleWords[element] + "<br>";
-  }
 
-/*
-  for (let i = 0; i < characterSelected.description.length ; i++) {
-    textBody.innerHTML += `${characterSelected.description[i]} <br>`;
-  }
+  const table = document.createElement("table");
+  table.classList.add("hint-table");
+  table.classList.add("table")
+  table.classList.add("table-stripe")
+  table.classList.add("table-hover")
 
- */
-  console.log(posibleWords);
+  const headerRow = document.createElement("tr");
+  const headers = ["Word", "Meaning", "Audio"];
+  headers.forEach(headerText => {
+    const header = document.createElement("th");
+    header.textContent = headerText;
+    headerRow.appendChild(header);
+  });
+  table.appendChild(headerRow);
 
-  modalBody.append(textBody);
+  posibleWords.forEach(wordObj => {
+    const row = document.createElement("tr");
+
+    const wordCell = document.createElement("td");
+    wordCell.textContent = wordObj.word;
+    row.appendChild(wordCell);
+
+    const meaningCell = document.createElement("td");
+    meaningCell.textContent = wordObj.meaning;
+    row.appendChild(meaningCell);
+
+    const audioCell = document.createElement("td");
+    const audioButton = document.createElement("button");
+    audioButton.textContent = "▶️";
+    audioButton.addEventListener("click", () => {
+      const audio = new Audio(wordObj.audio_path);
+      audio.play();
+    });
+    audioCell.appendChild(audioButton);
+    row.appendChild(audioCell);
+
+    table.appendChild(row);
+  });
+
+  modalBody.appendChild(table);
 }
 
+
 function getRandomWordFromVocabularyPool() {
-  return vocabularyPool[Math.floor(Math.random() * vocabularyPool.length)].word;
+  return vocabularyPool[Math.floor(Math.random() * vocabularyPool.length)];
 }
 
 window.addEventListener("load", () => {
