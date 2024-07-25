@@ -79,6 +79,12 @@ a {
   cursor: pointer;
   transform: scale(1.1);
 }
+img.game_logo {
+  width: 330px;
+  height: 330px;
+  border: 10px solid #FC5C5C;
+  box-shadow: #8e8e93 3px 3px;
+}
 
 .modal-title {
   text-align: center;
