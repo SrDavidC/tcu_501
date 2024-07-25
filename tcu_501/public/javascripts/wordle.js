@@ -1,15 +1,15 @@
 import { testDictionary, realDictionary} from "./Objects/dictionary.js";
 import { sixth_grade_unit_1} from "./Objects/vocabularyPool.js";
-import {HINT_LENGHT} from "./constants/wordle.js";
+import {COLUMNS_COUNT, HINT_LENGHT, ROWS_COUNT} from "./constants/wordle.js";
 import {shuffle} from "./Utils.js";
 
 const dictionary = realDictionary;
 const vocabularyPool = sixth_grade_unit_1;
 const state = {
   secret: getRandomWordFromVocabularyPool(),
-  grid: Array(6)
+  grid: Array(ROWS_COUNT)
     .fill()
-    .map(() => Array(5).fill('')),
+    .map(() => Array(COLUMNS_COUNT).fill('')),
 
   currentRow: 0,
   currentCol: 0,
@@ -41,8 +41,8 @@ function drawGrid(container) {
   const grid = document.createElement("div");
   grid.className = "grid";
 
-  for (let i = 0; i < 6; i++) {
-    for (let j = 0; j < 5; j++) {
+  for (let i = 0; i < ROWS_COUNT; i++) {
+    for (let j = 0; j < COLUMNS_COUNT; j++) {
       drawBox(grid, i, j);
     }
   }
@@ -54,6 +54,7 @@ function getCurrentWord() {
 }
 
 function isValidWord(word) {
+  word = word.toLowerCase();
   return dictionary.includes(word);
 }
 function getNumOfOccurrencesInWord(word, letter) {
@@ -77,12 +78,14 @@ function getPositionOfOccurrence(word, letter, position) {
 }
 
 function revealWord(guess) {
+  guess.toLowerCase();
+
   const row = state.currentRow;
   const animation_duration = 500; // ms
 
   for (let i = 0; i < 5; i++) {
     const box = document.getElementById(`box${row}${i}`);
-    const letter = box.textContent;
+    const letter = box.textContent.toLowerCase();
     const numOfOccurrencesSecret = getNumOfOccurrencesInWord(
       state.secret,
       letter
@@ -111,8 +114,8 @@ function revealWord(guess) {
     box.style.animationDelay = `${(i * animation_duration) / 2}ms`;
   }
 
-  const isWinner = state.secret === guess;
-  const isGameOver = state.currentRow === 5;
+  const isWinner = state.secret.toLowerCase() === guess.toLowerCase();
+  const isGameOver = state.currentRow === ROWS_COUNT - 1;
 
   setTimeout(() => {
     if (isWinner) {
@@ -160,6 +163,7 @@ function registerKeyboardEvents() {
       removeLetter();
     }
     // if add
+    key.toLowerCase();
     if (isLetter(key)) {
       addLetter(key)
     }
@@ -258,5 +262,10 @@ function populateHintModal() {
 function getRandomWordFromVocabularyPool() {
   return vocabularyPool[Math.floor(Math.random() * vocabularyPool.length)];
 }
+
+window.addEventListener("load", () => {
+  showHintModal();
+})
+
 
 startup();
