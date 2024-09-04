@@ -1,7 +1,7 @@
 import { testDictionary, realDictionary} from "./Objects/dictionary.js";
 import { sixth_grade_unit_1} from "./Objects/vocabularyPool.js";
 import {COLUMNS_COUNT, HINT_LENGHT, ROWS_COUNT} from "./constants/wordle.js";
-import {shuffle} from "./Utils.js";
+import {shuffle, playWinSound} from "./Utils.js";
 
 const dictionary = realDictionary;
 const vocabularyPool = sixth_grade_unit_1;
@@ -120,6 +120,7 @@ function revealWord(guess) {
   setTimeout(() => {
     if (isWinner) {
       showWinModal("Congratulations! Yow discovered the word 🥳! ")
+      playWinSound();
     } else if (isGameOver) {
       showWinModal(`Better luck next time! The word was ${state.secret.word}.`);
     }
