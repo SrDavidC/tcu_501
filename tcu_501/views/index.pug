@@ -26,12 +26,8 @@ block content
       div.game_image_container#wordle-go-btn
         img.game_logo(src="/images/games_thumbnail/Wordle.png", alt="Imagen de un juego")
 
-footer.bg-body-tertiary.text-center.text-lg-start.footer
-  div(class="text-center p-3 footer")
-    img(src="images/logoTCU501.png")
-    img(src="images/ucr_logo.png")
-    img(src="images/tculogo.png")
-    img(src="images/elm_logo.png")
+include footer.pug
+
   script(type="module" src='/javascripts/index.js')
   script(src='https://code.jquery.com/jquery-3.2.1.min.js'
     integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
