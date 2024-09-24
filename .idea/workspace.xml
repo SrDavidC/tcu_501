@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3a1b5a86-f80c-46c6-9b71-ae6b424d9e87" name="Changes" comment="Merge">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tcu_501.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/TCU_501.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/TCU_501.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/elm_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/elm_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/games_thumbnail/SlidePuzzle.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/games_thumbnail/SlidePuzzle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/games_thumbnail/Wordle.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/games_thumbnail/Wordle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/logoTCU501.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logoTCU501.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/batman/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/batman/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/batman/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/batman/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/batman/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/batman/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/batman/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/batman/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/batman/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/batman/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/batman/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/batman/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/batman/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/batman/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/batman/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/batman/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/carmen_lyra/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/carmen_lyra/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/carmen_lyra/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/carmen_lyra/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/carmen_lyra/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/carmen_lyra/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/carmen_lyra/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/carmen_lyra/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/carmen_lyra/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/carmen_lyra/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/carmen_lyra/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/carmen_lyra/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/carmen_lyra/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/carmen_lyra/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/carmen_lyra/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/carmen_lyra/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/carmen_lyra/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/carmen_lyra/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/juan_santamaria/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/juan_santamaria/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/juan_santamaria/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/juan_santamaria/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/juan_santamaria/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/juan_santamaria/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/juan_santamaria/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/juan_santamaria/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/juan_santamaria/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/juan_santamaria/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/juan_santamaria/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/juan_santamaria/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/juan_santamaria/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/juan_santamaria/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/juan_santamaria/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/juan_santamaria/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/juan_santamaria/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/juan_santamaria/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/shirley_cruz/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/shirley_cruz/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/shirley_cruz/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/shirley_cruz/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/shirley_cruz/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/shirley_cruz/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/shirley_cruz/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/shirley_cruz/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/shirley_cruz/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/shirley_cruz/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/shirley_cruz/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/shirley_cruz/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/shirley_cruz/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/shirley_cruz/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/shirley_cruz/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/shirley_cruz/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/shirley_cruz/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/shirley_cruz/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/superman/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/superman/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/superman/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/superman/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/superman/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/superman/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/superman/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/superman/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/superman/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/superman/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/superman/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/superman/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/superman/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/superman/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/superman/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/superman/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/superman/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/superman/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/wonder_woman/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/wonder_woman/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/wonder_woman/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/wonder_woman/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/wonder_woman/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/wonder_woman/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/wonder_woman/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/wonder_woman/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/slide_puzzle/wonder_woman/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/tculogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/tculogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/images/ucr_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/ucr_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/javascripts/ListenersUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/ListenersUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/javascripts/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/javascripts/Objects/CharacterSP.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/Objects/CharacterSP.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/javascripts/Objects/dictionary.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/Objects/dictionary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/javascripts/Objects/vocabularyPool.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/Objects/vocabularyPool.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/javascripts/Utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/Utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/javascripts/constants/slidepuzzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/constants/slidepuzzle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/javascripts/constants/wordle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/constants/wordle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/javascripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/javascripts/slide_puzzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/slide_puzzle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/javascripts/wordle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/wordle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/heroes/Batman.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/heroes/Batman.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/heroes/Carmen Lyra.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/heroes/Carmen Lyra.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/heroes/Juan Santamaria.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/heroes/Juan Santamaria.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/heroes/Shirley Cruz.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/heroes/Shirley Cruz.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/heroes/Superman.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/heroes/Superman.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/heroes/Wonder woman.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/heroes/Wonder woman.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/win.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/win.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/words/Brave.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/words/Brave.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/words/Crime.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/words/Crime.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/words/Fight.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/words/Fight.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/words/Funny.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/words/Funny.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/words/Great.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/words/Great.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/words/Honor.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/words/Honor.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/words/Human.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/words/Human.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/words/Saved.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/words/Saved.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/words/Sense.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/words/Sense.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/words/Shoot.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/words/Shoot.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/words/Smart.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/words/Smart.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/words/Speed.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/words/Speed.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/sounds/words/Super.wav" beforeDir="false" afterPath="$PROJECT_DIR$/public/sounds/words/Super.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/stylesheets/slide_puzzle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/slide_puzzle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/public/stylesheets/wordle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/wordle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/views/error.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/error.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/views/footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/footer.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/views/slide_puzzle.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/slide_puzzle.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcu_501/views/wordle.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/wordle.pug" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SrDavidC&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="8b212f3a-e11f-4791-9f3b-ec1c52c93907" />
+        <option name="url" value="https://github.com/SrDavidC/tcu_501.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2dx3Aopt4ZD74NwqoXYTNcmp2gI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Merging master",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.nodejs.core.library.configured.version": "20.11.1",
+    "javascript.nodejs.core.library.typings.version": "20.11.30",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.5\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3a1b5a86-f80c-46c6-9b71-ae6b424d9e87" name="Changes" comment="" />
+      <created>1710935762773</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710935762773</updated>
+      <workItem from="1710935765081" duration="178000" />
+      <workItem from="1710936408174" duration="2028000" />
+      <workItem from="1712930111423" duration="1561000" />
+      <workItem from="1713453975903" duration="2504000" />
+      <workItem from="1713992314731" duration="1653000" />
+      <workItem from="1714058321338" duration="686000" />
+      <workItem from="1725423723571" duration="1252000" />
+      <workItem from="1725477131238" duration="617000" />
+      <workItem from="1726849685702" duration="338000" />
+      <workItem from="1726940384480" duration="5429000" />
+      <workItem from="1726948626660" duration="1654000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: now index does not use layout. It is now independent">
+      <option name="closed" value="true" />
+      <created>1712930809801</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712930809801</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: now layout has the footer">
+      <option name="closed" value="true" />
+      <created>1712930835997</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712930835997</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: init modal for hints in Wordle">
+      <option name="closed" value="true" />
+      <created>1713993312371</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713993312371</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: now index does not use layout. It is now independent" />
+    <MESSAGE value="feat: now layout has the footer" />
+    <MESSAGE value="feat: init modal for hints in Wordle" />
+    <MESSAGE value="feat: untracked file added" />
+    <MESSAGE value="Merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
+  </component>
+</project>
