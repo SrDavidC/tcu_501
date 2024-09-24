@@ -10,6 +10,7 @@ html
     nav#navbar
       div.container
         h1.navbar-header= title
+        button(id="about-us-btn" name="about-us-btn" class="btn-about-us" type="button") About us
 
 block content
   div.games_container
@@ -25,6 +26,29 @@ block content
         h1 Wordle
       div.game_image_container#wordle-go-btn
         img.game_logo(src="/images/games_thumbnail/Wordle.png", alt="Imagen de un juego")
+
+.modal.fade#about-us-modal(tabindex="-1", role="dialog", aria-labelledby="about-us-modal", aria-hidden="true", data-backdrop="static", data-bs-backdrop="static")
+  .modal-dialog.modal-dialog-centered(role="document")
+    .modal-content
+      .modal-header.text-white
+        h5.modal-title#exampleModalLongTitle About Us! 🙂
+          span(aria-hidden="true")
+      .modal-body#modal-about-us-body
+        h2.text-center(style="font-family: 'Comic Sans MS', cursive;") TCU-501: 🌟
+        p(style="font-size: 1.2rem;") 📧 Email: tcu501.elm@ucr.ac.cr
+        p(style="font-size: 1.2rem;") 🌐 Web Page:
+          a(href="https://lenguasmodernas.ucr.ac.cr/tcu-501/" target="_blank", style="text-decoration: none;") TCU 501
+        h2.text-center(style="font-family: 'Comic Sans MS', cursive;") Coordinator TCU-501: 👩‍🏫
+        p(style="font-size: 1.2rem;") Mag. Roxana Chévez H.
+        h2.text-center(style="font-family: 'Comic Sans MS', cursive;") Developer: 👨‍💻
+        p(style="font-size: 1.2rem;") David Alessandro Cerdas Alvarado
+        h2.text-center(style="font-family: 'Comic Sans MS', cursive;") Audio voice lines: 🎤
+        p(style="font-size: 1.2rem;") Sharon Rojas Medina
+        h2.text-center(style="font-family: 'Comic Sans MS', cursive;") External Resources: 📚
+        p(style="font-size: 1.2rem;") --
+      .modal-footer
+        button.btn.m-auto.btn-close-about-us#btn-close(type="button", data-bs-dismiss="modal") 🛑 Close
+
 
 include footer.pug
 

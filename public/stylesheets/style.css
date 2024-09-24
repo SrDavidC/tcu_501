@@ -15,7 +15,7 @@ a {
   display: flex;
 }
 
-#navbar div .navbar-header {
+#navbar div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,3 +127,77 @@ img.game_logo {
 .btn.btn-primary[disabled] {
   background-color: #a19a9a;
 }
+.btn-about-us {
+  min-width: 125px;
+  min-height: 50px;
+  background: none;
+  color: #FFFF;
+
+  font-weight: bold;
+  border-color: #FFFF;
+  margin-left: auto;
+}
+
+.modal-body {
+  background-color: #f0f8ff;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #444;
+}
+
+/* Modal Header */
+.modal-header {
+  background-color: #44A49C;
+  font-size: 1.5rem;
+  border-bottom: 3px solid #339b8b;
+}
+
+/* Text */
+.modal-body h2 {
+  color: #ff6347;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.modal-body p {
+  color: #008080;
+  font-size: 1.1rem;
+}
+
+/* Close Button */
+#btn-close {
+  background-color: #44A49C;
+  font-size: 1.2rem;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+}
+
+#btn-close:hover {
+  background-color: #339b8b;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Modal Animations */
+.modal-content {
+  border-radius: 20px;
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.btn-close-about-us {
+  background-color: #44A49C;
+}
+
+
+
