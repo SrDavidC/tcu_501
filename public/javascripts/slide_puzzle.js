@@ -16,7 +16,11 @@ let path = "images/slide_puzzle/"
 // let imgOrder = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 let imgOrder = ["4", "2", "8", "5", "1", "6", "7", "9", "3"];
 const imgCharacters =
-    ["juan_santamaria", "carmen_lyra", "shirley_cruz", "batman", "wonder_woman", "superman"];
+    ["juan_santamaria", "carmen_lyra",
+        "shirley_cruz", "batman", "wonder_woman",
+        "superman", "aquaman", "flash", "ironman", "spiderman",
+        "thor"
+    ];
 let characterSelected = "";
 const characters_map = new Map();
 
@@ -262,6 +266,57 @@ function initCharactersMap() {
             , AUDIOS_HEROES_PATH + "Wonder Woman.wav"
         ),
     )
+
+    characters_map.set("aquaman", new CharacterSP("Aquaman", [
+                "Aquaman is the king of the ocean.",
+                "He can swim fast and talk to fish.",
+                "He is very strong in the water. Aquaman takes care of the sea and its animals.",
+            ]
+            , AUDIOS_HEROES_PATH + "Wonder Woman.wav"
+        ),
+    )
+
+    characters_map.set("flash", new CharacterSP("The Flash", [
+                "The Flash is the fastest superhero.",
+                "He runs very, very fast. He is faster than a car or a plane.",
+                "The Flash helps people very quickly. He is also very kind.",
+            ]
+            , AUDIOS_HEROES_PATH + "Wonder Woman.wav"
+        ),
+    )
+
+    characters_map.set("thor", new CharacterSP("Thor", [
+                "Thor is the god of thunder.",
+                "He has a magic hammer. Only Thor can lift it.",
+                "He is very strong.",
+                "Thor can make lightning with his hammer. He protects people from bad guys."
+            ]
+            , AUDIOS_HEROES_PATH + "Wonder Woman.wav"
+        ),
+    )
+
+    characters_map.set("ironman", new CharacterSP("Iron Man", [
+                "Iron Man is very smart. He wears a metal suit.",
+                "The suit can fly and shoot lasers. ",
+                "Iron Man builds cool machines.",
+                "He uses them to save the world."
+            ]
+            , AUDIOS_HEROES_PATH + "Wonder Woman.wav"
+        ),
+    )
+
+    characters_map.set("spiderman", new CharacterSP("Spider-Man", [
+                "Spider-Man is a superhero",
+                "He can climb walls like a spider.",
+                "He swings with his webs. He is fast and strong.",
+                "He helps people when they are in danger."
+            ]
+            , AUDIOS_HEROES_PATH + "Wonder Woman.wav"
+        ),
+    )
+
+
+
 
     console.log(characters_map)
 
