@@ -1,7 +1,8 @@
-export function CharacterSP(name, description, audio) {
+export function CharacterSP(name, description, audio, filename) {
   this.name = name;
   this.description = description;
   this.audio = audio;
+  this.filename = filename;
 }
 
 CharacterSP.prototype.playAudio = function () {
