@@ -4,10 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a1b5a86-f80c-46c6-9b71-ae6b424d9e87" name="Changes" comment="feat: added credits modal">
-      <change afterPath="$PROJECT_DIR$/public/images/slide_puzzle/aquaman/3.jpg" afterDir="false" />
+    <list default="true" id="3a1b5a86-f80c-46c6-9b71-ae6b424d9e87" name="Changes" comment="feat:full refactor about all logistic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/slide_puzzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/slide_puzzle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/batman/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/batman/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/batman/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/batman/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/batman/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/batman/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/batman/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/9.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,26 +68,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "javascript.nodejs.core.library.configured.version": "20.11.1",
-    "javascript.nodejs.core.library.typings.version": "20.11.30",
-    "last_opened_file_path": "C:/Users/XPC_DC/WebstormProjects/tcu_501/public/images/slide_puzzle/aquaman",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.start.executor": "Run",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.5\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.11.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.11.30&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/XPC_DC/WebstormProjects/tcu_501/public/images/slide_puzzle/aquaman&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.5\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\XPC_DC\WebstormProjects\tcu_501\public\images\slide_puzzle\aquaman" />
@@ -122,7 +136,14 @@
       <workItem from="1727148408108" duration="2881000" />
       <workItem from="1727216628567" duration="675000" />
       <workItem from="1727453151482" duration="911000" />
-      <workItem from="1736206341414" duration="1434000" />
+      <workItem from="1736206341414" duration="2298000" />
+      <workItem from="1736209114413" duration="609000" />
+      <workItem from="1736370568945" duration="956000" />
+      <workItem from="1736554149928" duration="662000" />
+      <workItem from="1737591869147" duration="1197000" />
+      <workItem from="1737702825374" duration="119000" />
+      <workItem from="1737939700864" duration="4976000" />
+      <workItem from="1738026033220" duration="37000" />
     </task>
     <task id="LOCAL-00001" summary="feat: now index does not use layout. It is now independent">
       <option name="closed" value="true" />
@@ -164,7 +185,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727150695564</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: added new images and characters to Slide Puzzle">
+      <option name="closed" value="true" />
+      <created>1736208042197</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736208042197</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat:full refactor about all logistic">
+      <option name="closed" value="true" />
+      <created>1737942220152</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737942220152</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +225,8 @@
     <MESSAGE value="feat: untracked file added" />
     <MESSAGE value="Merge" />
     <MESSAGE value="feat: added credits modal" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added credits modal" />
+    <MESSAGE value="feat: added new images and characters to Slide Puzzle" />
+    <MESSAGE value="feat:full refactor about all logistic" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:full refactor about all logistic" />
   </component>
 </project>
