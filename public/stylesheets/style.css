@@ -1,7 +1,42 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #F4E8E3;
+  font-family: "Asap", serif;
+  font-style: normal;
+  background-color: #5B5BEF;
 }
+
+.main_title_container {
+  padding: 20px;
+  margin-top: 50px;
+}
+.main_title {
+
+  font-family: "Modak", serif;
+  font-style: normal;
+  font-size: 10vw;
+
+}
+.sub_title {
+  font-family: "Asap", serif;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+.introduction_text {
+  font-family: "Asap", serif;
+  font-weight: 350;
+  color: #FFFFFF;
+  font-size: 3vh;
+}
+
+.main_title_1 {
+  color: #FF4F81;
+}
+.main_title_2 {
+  color: #FFFFFF;
+}
+.main_title_3 {
+  color: #3BE8B0;
+}
+
 
 a {
   color: #00B7FF;
