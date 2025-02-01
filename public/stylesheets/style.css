@@ -42,12 +42,63 @@ a {
   color: #00B7FF;
 }
 
+.about-us-btn {
+  background-color: #14D4F4;
+  box-shadow: #039cb5 3px 3px;
+}
+
+.btns-main {
+  height: 10vh;
+  width: 40vh;
+  border-radius: 300px;
+  color: #FFFFFF;
+  font-size: 3vh;
+  font-weight: 900;
+}
+
+.credits-btn {
+  background: #3BE8B0;
+  box-shadow: #01b27f 3px 3px;
+  color: #FFFFFF;
+}
+
 #navbar {
   background-color: #44A49C;
   margin: 0;
   color: white;
   overflow: hidden;
   display: flex;
+}
+
+.games-section {
+  background-color: #14D4F4;
+  border-radius: 400px;
+  padding: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-games-title {
+  font-weight: 900;
+}
+
+
+.submenu-container {
+  padding: 50px;
+}
+
+.games-submenu {
+  background-color: #5B5BEF;
+  border-radius: 500px;
+  padding: 10px;
+}
+
+.submenu_title {
+  font-family: "Modak", serif;
+  font-style: normal;
+  font-size: 3vw;
+  color: #FFFFFF;
+  margin: auto;
 }
 
 #navbar div {
@@ -80,6 +131,7 @@ a {
   align-items: center;
   justify-content: center;
   margin: 40px;
+  gap: 40px;
 }
 
 .game_container {
@@ -213,7 +265,6 @@ img.game_logo {
   transition: all 0.2s ease-in-out;
 }
 
-/* Modal Animations */
 .modal-content {
   border-radius: 20px;
   animation: slideDown 0.5s ease-out;
@@ -232,6 +283,31 @@ img.game_logo {
 
 .btn-close-about-us {
   background-color: #44A49C;
+}
+
+.btn {
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.about-us-btn:hover {
+  background-color: #dc3545;
+}
+
+.credits-btn:hover {
+  background-color: #dc3545;
+}
+
+
+.btn:hover {
+  opacity: 0.8;
 }
 
 

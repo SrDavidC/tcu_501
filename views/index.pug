@@ -21,21 +21,29 @@ div.container.main_title_container.text-center
   h2.sub_title A TCU-501 Project
 
   p.introduction_text Get ready for an exciting adventure in English! At Play & Learn, we believe that learning should be fun and engaging. Our website is designed to make English learning a thrilling experience for kids of all ages. Through interactive games, captivating stories, and exciting challenges, we'll guide you on a journey of discovery where you'll build vocabulary, improve grammar, and develop essential communication skills without even realizing you're learning! So, come join the fun and let's make English learning an unforgettable adventure!
+  div.container.main_title-btns.grid.gap-2
+    button(type='button', class='btn about-us-btn g-col-6').m-5.btns-main about us
+    button(type='button', class='btn credits-btn g-col-6').m-5.btns-main credits
 
+div.container-fluid.games-section
+  h1.text-white.text-center.main-games-title Let's Play
+  div.container.submenu-container
+    div.container.games-submenu
+      h1.submenu_title.text-center.text-white Play & Learn
 
-  div.games_container
+  div.games_container.flex-row
     div.game_container
       div.game_header
         h1 Who is that Famous? Slide Puzzle
       div.game_image_container#slide-go-btn
         img.game_logo(src="/images/games_thumbnail/SlidePuzzle.png", alt="Imagen de un juego")
 
-  div.games_container
     div.game_container
       div.game_header
         h1 Wordle
       div.game_image_container#wordle-go-btn
         img.game_logo(src="/images/games_thumbnail/Wordle.png", alt="Imagen de un juego")
+
 
 .modal.fade#about-us-modal(tabindex="-1", role="dialog", aria-labelledby="about-us-modal", aria-hidden="true", data-backdrop="static", data-bs-backdrop="static")
   .modal-dialog.modal-dialog-centered(role="document")
