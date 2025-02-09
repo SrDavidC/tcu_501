@@ -278,7 +278,6 @@ img.game_logo {
 }
 
 .btn:hover {
-  background-color: #007bff;
   color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -376,6 +375,32 @@ img.game_logo {
   opacity: 75%;
   background-color: #FFFFFF;
   color: black;
+}
+
+.btn-hints:hover {
+  opacity: 75%;
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.btn-hints {
+  width: 15vw;
+  height: 7vh;
+  background-color: #FFFFFF;
+  box-shadow: #8e8e93 3px 3px;
+  border-color: #FFFFFF;
+  border-radius: 75px;
+  color: black;
+}
+
+.hints-header {
+  font-weight: 900;
+  font-size: xxx-large;
+}
+
+.hints-text {
+  font-weight: 200;
+  font-size: x-large;
 }
 
 

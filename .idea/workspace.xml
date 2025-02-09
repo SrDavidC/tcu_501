@@ -4,34 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a1b5a86-f80c-46c6-9b71-ae6b424d9e87" name="Changes" comment="refact: finished main page">
-      <change afterPath="$PROJECT_DIR$/public/images/LogoTCU501.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/credits.pug" afterDir="false" />
+    <list default="true" id="3a1b5a86-f80c-46c6-9b71-ae6b424d9e87" name="Changes" comment="refact: change style of Slide Puzzle">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logoTCU501.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/batman/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/batman/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/batman/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/batman/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/batman/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/batman/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/batman/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/batman/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/batman/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/batman/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/batman/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/batman/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/batman/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/batman/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/batman/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/batman/9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/slide_puzzle/wonder_woman/9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/slide_puzzle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/slide_puzzle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/wordle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/wordle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/footer.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/wordle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/wordle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/slide_puzzle.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/slide_puzzle.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/wordle.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/wordle.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,27 +59,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "javascript.nodejs.core.library.configured.version": "20.11.1",
-    "javascript.nodejs.core.library.typings.version": "20.11.30",
-    "last_opened_file_path": "C:/Users/XPC_DC/WebstormProjects/tcu_501/public/images",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.start.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.5\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.11.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.11.30&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/XPC_DC/WebstormProjects/tcu_501/public/images&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.5\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\XPC_DC\WebstormProjects\tcu_501\public\images" />
@@ -161,6 +140,7 @@
       <workItem from="1738357985080" duration="7047000" />
       <workItem from="1738383874636" duration="1840000" />
       <workItem from="1738439307950" duration="5343000" />
+      <workItem from="1739120646500" duration="7860000" />
     </task>
     <task id="LOCAL-00001" summary="feat: now index does not use layout. It is now independent">
       <option name="closed" value="true" />
@@ -250,7 +230,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738384331158</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="refact: updated files">
+      <option name="closed" value="true" />
+      <created>1739120975209</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1739120975209</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refact: change style of Slide Puzzle">
+      <option name="closed" value="true" />
+      <created>1739125719803</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1739125719803</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +275,8 @@
     <MESSAGE value="refact: new images to batman and wonde woman" />
     <MESSAGE value="refact: first visual changes in main page" />
     <MESSAGE value="refact: finished main page" />
-    <option name="LAST_COMMIT_MESSAGE" value="refact: finished main page" />
+    <MESSAGE value="refact: updated files" />
+    <MESSAGE value="refact: change style of Slide Puzzle" />
+    <option name="LAST_COMMIT_MESSAGE" value="refact: change style of Slide Puzzle" />
   </component>
 </project>

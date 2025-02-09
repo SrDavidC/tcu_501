@@ -1,5 +1,5 @@
 :root {
-    --default: #8e8e93;
+    --default: #FF4F81;
     --empty: #3a3a3c;
     --wrong: #b59f3b;
     --right: #538d4e;
@@ -72,13 +72,15 @@
 }
 
 .key {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ccc;
     cursor: pointer;
+    background: #272769;
+    color: #8989FF;
+    border-radius: 10px;
 }
 .key[data-key="Enter"],
 .key[data-key="Backspace"] {
@@ -103,4 +105,8 @@
     100% {
         transform: scaleY(1);
     }
+}
+
+.btns-container-wordle {
+    border-radius: 400px;
 }

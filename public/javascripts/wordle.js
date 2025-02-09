@@ -189,6 +189,7 @@ function populateHintModal() {
   ["Word", "Meaning", "Audio"].forEach(headerText => {
     const header = document.createElement("th");
     header.textContent = headerText;
+    header.classList.add("hints-header")
     headerRow.appendChild(header);
   });
   table.appendChild(headerRow);
@@ -198,15 +199,17 @@ function populateHintModal() {
 
     const wordCell = document.createElement("td");
     wordCell.textContent = word;
+    wordCell.classList.add('hints-text')
     row.appendChild(wordCell);
 
     const meaningCell = document.createElement("td");
     meaningCell.textContent = meaning;
+    meaningCell.classList.add('hints-text')
     row.appendChild(meaningCell);
 
     const audioCell = document.createElement("td");
     const audioButton = document.createElement("button");
-    audioButton.textContent = "▶️";
+    audioButton.textContent = "▶";
     audioButton.addEventListener("click", () => {
       const audio = new Audio(audio_path);
       audio.play();
@@ -256,6 +259,19 @@ function showHintModal() {
 
 
 
-// Initialization
+document.addEventListener('DOMContentLoaded', function () {
+  const keys = document.querySelectorAll('.key');
+
+  keys.forEach(key => {
+    key.addEventListener('click', function () {
+      const keyValue = key.dataset.key;
+
+      const keyboardEvent = new KeyboardEvent('keydown', { key: keyValue.toUpperCase() });
+      document.body.dispatchEvent(keyboardEvent);
+    });
+  });
+});
+
+
 window.addEventListener("load", showHintModal);
 startup();
