@@ -1,19 +1,13 @@
 doctype html
 html
   head
-    title= title
+    title="Play & Learn"
     link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous")
     link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
     link(href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet")
     link(href='https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap', rel='stylesheet')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-//--
-    nav#navbar
-      div.container
-        h1.navbar-header= title
-        button(id="about-us-btn" name="about-us-btn" class="btn-about-us" type="button") About us
-
 block content
 div.container.main_title_container.text-center
   h1.main_title_1.main_title Play<br><span class="main_title_2 main_title">&amp;</span><span class="main_title_3 main_title"> Learn</span>
@@ -22,8 +16,8 @@ div.container.main_title_container.text-center
 
   p.introduction_text Get ready for an exciting adventure in English! At Play & Learn, we believe that learning should be fun and engaging. Our website is designed to make English learning a thrilling experience for kids of all ages. Through interactive games, captivating stories, and exciting challenges, we'll guide you on a journey of discovery where you'll build vocabulary, improve grammar, and develop essential communication skills without even realizing you're learning! So, come join the fun and let's make English learning an unforgettable adventure!
   div.container.main_title-btns.grid.gap-2
-    button(type='button', class='btn about-us-btn g-col-6').m-5.btns-main about us
-    button(type='button', class='btn credits-btn g-col-6').m-5.btns-main credits
+    a(class='btn about-us-btn' href="https://lenguasmodernas.ucr.ac.cr/tcu-501/" target="_blank").m-5.btns-main.flex.text-center.justify-content-center.align-content-center about us
+    a(class='btn credits-btn' href="/credits").m-5.btns-main.text-center.justify-content-center.align-content-center credits
 
 div.container-fluid.games-section
   h1.text-white.text-center.main-games-title Let's Play

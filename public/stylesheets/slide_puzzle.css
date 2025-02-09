@@ -1,16 +1,22 @@
+body {
+    background-color: #FF4F81;
+}
+
 .board_container {
     text-align: center;
-    color: #0c67ae
+    color: #9a9c9e;
+
 }
 
 #board {
     width: 380px;
     height: 380px;
-    background-color: lightblue;
-    border: 10px solid #0c67ae;
+    background-color: #9a9c9e;
+    border: 10px solid #9a9c9e;
     margin: 50px auto 0;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 5px;
 }
 
 #board img {

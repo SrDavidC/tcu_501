@@ -63,7 +63,7 @@ a {
 }
 
 #navbar {
-  background-color: #44A49C;
+  background-color: #5B5BEF;
   margin: 0;
   color: white;
   overflow: hidden;
@@ -204,13 +204,9 @@ img.game_logo {
 }
 
 .footer {
-  background-color: #44A49C;
+  background-color: #3BE8B0;
 }
 
-.footer img {
-  height: 10%;
-  width: 10%;
-}
 .btn.btn-primary[disabled] {
   background-color: #a19a9a;
 }
@@ -310,5 +306,30 @@ img.game_logo {
   opacity: 0.8;
 }
 
+.navbar-header{
+  font-family: "Modak", serif;
+  font-style: normal;
+  font-size: 3vw;
+  color: #FFFFFF;
+  margin: auto;
+  background-color: #5B5BEF;
 
+}
+
+.colaborators-container {
+  font-size: 4vh;
+}
+
+.arrowback {
+  font-size: 8vh;
+  color: #FFFFFF;
+}
+.footer-logo {
+  height: 7vh;
+  width: 7vw;
+}
+
+.footer-logo:hover {
+  opacity: 0.8;
+}
 
