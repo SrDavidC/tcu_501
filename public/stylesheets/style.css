@@ -184,14 +184,6 @@ img.game_logo {
   line-height: 1.8;
 }
 
-.btn-newgame {
-  background-color: #FC5C5C;
-}
-
-.btn-newgame:hover {
-  background-color: #f17d7d;
-}
-
 .btns-container > * {
   margin: 30px;
 }
@@ -282,7 +274,6 @@ img.game_logo {
 }
 
 .btn {
-
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -332,4 +323,60 @@ img.game_logo {
 .footer-logo:hover {
   opacity: 0.8;
 }
+
+#btn-newgame {
+  width: 15vw;
+  height: 7vh;
+  background-color: #FFFFFF;
+  box-shadow: #8e8e93 3px 3px;
+  border-color: #FFFFFF;
+  border-radius: 75px;
+  color: black;
+}
+
+#btn-newgame span {
+  color: black;
+}
+#btn-instructions {
+  width: 15vw;
+  height: 7vh;
+  background-color: #FFFFFF;
+  box-shadow: #8e8e93 3px 3px;
+  border-color: #FFFFFF;
+  border-radius: 75px;
+  color: black;
+}
+
+#btn-instructions span{
+  color: black;
+}
+
+.modal-body {
+  background-color: #14D4F4;
+  color: #FFFFFF;
+  font-family: "Asap", serif;
+  font-style: normal;
+}
+
+.modal-footer {
+  background-color: #14D4F4;
+}
+
+.btn-close-modal {
+  width: 15vw;
+  height: 7vh;
+  background-color: #FFFFFF;
+  box-shadow: #8e8e93 3px 3px;
+  border-color: #FFFFFF;
+  border-radius: 75px;
+  color: black;
+}
+
+.btn-close-modal:hover {
+  opacity: 75%;
+  background-color: #FFFFFF;
+  color: black;
+}
+
+
 

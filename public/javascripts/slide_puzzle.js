@@ -172,8 +172,12 @@ function enableButtons() {
 }
 
 function showInstructionsModal() {
-    const modal = document.getElementById("instructions-modal");
-    modal.style.display = "block";
+    $('#instructions-modal').on('click', 'button.close', function (eventObject) {
+        $('#instructions-modal').modal('hide');
+    });
+
+    $('#instructions-modal').modal('show');
+
 }
 
 function isMobileDevice() {
