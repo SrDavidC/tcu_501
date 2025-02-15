@@ -29,11 +29,10 @@ block content
     .modal.fade#WinModalCenter(tabindex="-1", role="dialog", aria-labelledby="WinModalCenter", aria-hidden="true", data-backdrop="static")
         .modal-dialog.modal-dialog-centered(role="document")
             .modal-content
-                .modal-header
+                .modal-header.win-modal-header
                     h5.modal-title#FinalModalTitle
                         span(aria-hidden="true")
-                .modal-body#modal-winner-body
-                .modal-footer
+                .modal-footer.win-modal-footer
                     button.btn.m-auto.close.btn-close-modal(type="button", data-dismiss="modal") Close
 
     .modal.fade#HintModalCenter(tabindex="-1", role="dialog", aria-labelledby="HintModalCenter", aria-hidden="true", data-backdrop="static")

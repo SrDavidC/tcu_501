@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a1b5a86-f80c-46c6-9b71-ae6b424d9e87" name="Changes" comment="refact: change style of Slide Puzzle">
+    <list default="true" id="3a1b5a86-f80c-46c6-9b71-ae6b424d9e87" name="Changes" comment="fix: fix bug that not enables the new game button on end game">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/wordle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/wordle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/wordle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/wordle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/wordle.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/wordle.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +137,9 @@
       <workItem from="1738357985080" duration="7047000" />
       <workItem from="1738383874636" duration="1840000" />
       <workItem from="1738439307950" duration="5343000" />
-      <workItem from="1739120646500" duration="7860000" />
+      <workItem from="1739120646500" duration="8007000" />
+      <workItem from="1739408236167" duration="11000" />
+      <workItem from="1739571244473" duration="1515000" />
     </task>
     <task id="LOCAL-00001" summary="feat: now index does not use layout. It is now independent">
       <option name="closed" value="true" />
@@ -246,7 +245,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739125719803</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="refact: change style of Wordle">
+      <option name="closed" value="true" />
+      <created>1739135796712</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1739135796712</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix: fix bug that not enables the new game button on end game">
+      <option name="closed" value="true" />
+      <created>1739589136297</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1739589136297</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +292,8 @@
     <MESSAGE value="refact: finished main page" />
     <MESSAGE value="refact: updated files" />
     <MESSAGE value="refact: change style of Slide Puzzle" />
-    <option name="LAST_COMMIT_MESSAGE" value="refact: change style of Slide Puzzle" />
+    <MESSAGE value="refact: change style of Wordle" />
+    <MESSAGE value="fix: fix bug that not enables the new game button on end game" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fix bug that not enables the new game button on end game" />
   </component>
 </project>
