@@ -110,3 +110,17 @@
 .btns-container-wordle {
     border-radius: 400px;
 }
+
+#WinModalCenter {
+    background-color: #5B5BEF;
+}
+.win-modal-header {
+    background-color: #5B5BEF;
+    color: white;
+    font-family: "Asap", serif;
+}
+.win-modal-footer {
+    background-color: #5B5BEF;
+    color: white;
+    font-family: "Asap", serif;
+}
