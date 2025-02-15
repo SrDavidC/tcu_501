@@ -107,11 +107,13 @@ function checkGameEnd(guess) {
 
   setTimeout(() => {
     if (isWinner) {
-      showModal("Congratulations! You discovered the word 🥳!");
+      showModal("Congratulations! You discovered the word 🥳!".toUpperCase());
       playWinSound();
+
     } else if (isGameOver) {
-      showModal(`Better luck next time! The word was ${state.secret.word}.`);
+      showModal(`Better luck next time! The word was ${state.secret.word}.`.toUpperCase());
     }
+    const btnNewGame = document.getElementById("btn-newgame").disabled = false
   }, 3 * animationDuration);
 }
 
