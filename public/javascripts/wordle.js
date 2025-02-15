@@ -75,7 +75,7 @@ function updateGrid() {
 function revealWord(guess) {
   const { secret, currentRow } = state;
 
-  guess.toLowerCase();
+  guess = guess.toLowerCase();
   [...guess].forEach((letter, i) => {
     const box = document.getElementById(`box${currentRow}${i}`);
     const secretOccurrences = countOccurrences(secret.word, letter);
@@ -131,7 +131,7 @@ function registerKeyboardEvents() {
   document.body.onkeydown = (e) => {
     const key = e.key;
 
-    if (key === 'Enter' && state.currentCol === COLUMNS_COUNT) {
+    if (key === 'ENTER' && state.currentCol === COLUMNS_COUNT) {
       const word = getCurrentWord();
       if (isValidWord(word)) {
         revealWord(word);
@@ -140,7 +140,7 @@ function registerKeyboardEvents() {
       } else {
         alert("Not a valid word");
       }
-    } else if (key === 'Backspace') {
+    } else if (key === 'BACKSPACE') {
       removeLetter();
     } else if (isLetter(key)) {
       addLetter(key);
