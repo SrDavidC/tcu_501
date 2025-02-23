@@ -147,11 +147,18 @@ function showWinModal() {
     clearModalBody();
 
     const modalBody = document.getElementById("modal-winner-body");
-    const message = `<h2>You discovered the image of ${characterSelected.name}</h2>`;
-    const description = characterSelected.description.join("<br>");
+    const message = `<h2 class="header-win-modal">You discovered the image of ${characterSelected.name}</h2>`;
+    const subtitle = "<h3 class='subtitle-win-modal'> Here’s some information about this famous character </h3>"
+    const description = `<p class="heroe-description"> ${characterSelected.description} <br></p>`;
 
-    modalBody.innerHTML = `${message}<br>${description}`;
-    modal.style.display = "block";
+    modalBody.innerHTML = `${message}<br>${subtitle}<br>${description}`;
+    //modal.style.display = "block";
+
+    $('#WinModalCenter').on('click', 'button.close', function (eventObject) {
+        $('#WinModalCenter').modal('hide');
+    });
+    const modalTitle = document.getElementById("FinalModalTitle");
+    $("#WinModalCenter").modal("show");
 
     characterSelected.playAudio().then(() => enableButtons());
 }
@@ -184,7 +191,7 @@ function initCharactersMap() {
             ["Juan Santamaria Day is a" +
             " holiday in Costa Rica, and it is celebrated on April 11th. \n" +
             "The holiday commemorates the Battle of Rivas, made famous by the heroic actions of the National Hero, Juan Santamaria:" +
-            " the \"Little Drummer Boy\".\n", "He is brave.", "Juan Santamaría was successful in his mission and his actions helped" +
+            " the \"Little Drummer Boy\".\n", "He was brave.", "Juan Santamaría was successful in his mission and his actions helped" +
             " Costa Ricans win the battle, Santamaria was killed by enemy fire.\n"]
             , AUDIOS_HEROES_PATH + "Juan_Santamaria.wav", "juan_santamaria"
         )
