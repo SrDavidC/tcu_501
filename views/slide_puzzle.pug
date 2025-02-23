@@ -3,16 +3,19 @@ extends layout
 block content
     head
         link(rel='stylesheet', href='/stylesheets/slide_puzzle.css')
-
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=replay")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=developer_guide")
     div.game_container
         div.board_container
             div.board#board
-            h1.turns Turns:
-
-                span.turns#turns 0
             div.container.btns-container
-                button.btn.btn-primary.btn-newgame#btn-newgame(type="button" disabled=true) New Game 👾
-                button.btn.btn-primary.btn-instructions#btn-instructions(type="button") Instructions 📝
+                button.btn.btn-primary.btn-newgame.text-center#btn-newgame(type="button" disabled=true)
+                    span.material-symbols-outlined replay
+                    |  New Game
+                button.btn.btn-primary.btn-instructions#btn-instructions(type="button")
+                    svg(xmlns="http://www.w3.org/2000/svg", height="24px", viewBox="0 -960 960 960", width="24px", fill="undefined")
+                        path(d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-640v560h560v-560h-80v280l-100-60-100 60v-280H200Zm0 560v-560 560Z")
+                    | Instructions
 
     .modal.fade#WinModalCenter(tabindex="-1", role="dialog", aria-labelledby="WinModalCenter", aria-hidden="true", data-backdrop="static" data-bs-backdrop="static")
         .modal-dialog.modal-dialog-centered(role="document")
@@ -27,9 +30,6 @@ block content
     .modal.fade#instructions-modal(tabindex="-1", role="dialog", aria-labelledby="instructions-modal", aria-hidden="true", data-backdrop="static")
         .modal-dialog.modal-dialog-centered(role="document")
             .modal-content
-                .modal-header
-                    h5.modal-title Instructions 📝
-                        span(aria-hidden="true")
                 .modal-body
                     h6 English:
                     ol(type="1")
@@ -45,7 +45,7 @@ block content
                             Si usas un dispositivo móvil selecciona la pieza que quieras mover y luego selecciona la pieza blanca.
                         li Encontrarás información relevante acerca del héroe en la pantalla mostrada y también una vez logres acomodar la imagen de manera correcta.
                 .modal-footer
-                    button.btn.btn-secondary.m-auto.close(type="button", data-dismiss="modal") Close
+                    button.btn.m-auto.close.btn-close-modal(type="button", data-dismiss="modal") Close
 
 
     script(type="module" src='/javascripts/slide_puzzle.js')

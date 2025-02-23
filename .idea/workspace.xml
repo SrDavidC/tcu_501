@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a1b5a86-f80c-46c6-9b71-ae6b424d9e87" name="Changes" comment="feat: init modal for hints in Wordle">
-      <change afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="3a1b5a86-f80c-46c6-9b71-ae6b424d9e87" name="Changes" comment="refact: new styles to win modal">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/wordle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/wordle.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,10 +18,16 @@
       <list>
         <option value="TypeScript File" />
         <option value="JavaScript File" />
+        <option value="Pug File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -39,6 +43,9 @@
         <option name="url" value="https://github.com/SrDavidC/tcu_501.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -57,16 +64,28 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.11.1&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.11.30&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/XPC_DC/WebstormProjects/tcu_501/public/images&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.5\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\XPC_DC\WebstormProjects\tcu_501\public\images" />
+      <recent name="C:\Users\XPC_DC\WebstormProjects\tcu_501\public\images\slide_puzzle\aquaman" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\XPC_DC\WebstormProjects\tcu_501\public\images" />
+      <recent name="C:\Users\XPC_DC\WebstormProjects\tcu_501\public\images\slide_puzzle\aquaman" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -103,6 +122,23 @@
       <workItem from="1726849685702" duration="338000" />
       <workItem from="1726940384480" duration="5429000" />
       <workItem from="1726948626660" duration="1654000" />
+      <workItem from="1727148408108" duration="2881000" />
+      <workItem from="1727216628567" duration="675000" />
+      <workItem from="1727453151482" duration="911000" />
+      <workItem from="1736206341414" duration="2298000" />
+      <workItem from="1736209114413" duration="609000" />
+      <workItem from="1736370568945" duration="956000" />
+      <workItem from="1736554149928" duration="662000" />
+      <workItem from="1737591869147" duration="1197000" />
+      <workItem from="1737702825374" duration="119000" />
+      <workItem from="1737939700864" duration="4976000" />
+      <workItem from="1738026033220" duration="37000" />
+      <workItem from="1738357985080" duration="7047000" />
+      <workItem from="1738383874636" duration="1840000" />
+      <workItem from="1738439307950" duration="5343000" />
+      <workItem from="1739120646500" duration="8007000" />
+      <workItem from="1739408236167" duration="11000" />
+      <workItem from="1739571244473" duration="2413000" />
     </task>
     <task id="LOCAL-00001" summary="feat: now index does not use layout. It is now independent">
       <option name="closed" value="true" />
@@ -128,7 +164,119 @@
       <option name="project" value="LOCAL" />
       <updated>1713993312371</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Merge">
+      <option name="closed" value="true" />
+      <created>1727140557870</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727140557870</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: added credits modal">
+      <option name="closed" value="true" />
+      <created>1727150695564</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727150695564</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: added new images and characters to Slide Puzzle">
+      <option name="closed" value="true" />
+      <created>1736208042197</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736208042197</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat:full refactor about all logistic">
+      <option name="closed" value="true" />
+      <created>1737942220152</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737942220152</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refact: new images to batman and wonde woman">
+      <option name="closed" value="true" />
+      <created>1738358013945</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738358013945</updated>
+    </task>
+    <task id="LOCAL-00009" summary="refact: new images to batman and wonde woman">
+      <option name="closed" value="true" />
+      <created>1738358033928</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738358033928</updated>
+    </task>
+    <task id="LOCAL-00010" summary="refact: first visual changes in main page">
+      <option name="closed" value="true" />
+      <created>1738360321651</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738360321651</updated>
+    </task>
+    <task id="LOCAL-00011" summary="refact: finished main page">
+      <option name="closed" value="true" />
+      <created>1738384331158</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738384331158</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refact: updated files">
+      <option name="closed" value="true" />
+      <created>1739120975209</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1739120975209</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refact: change style of Slide Puzzle">
+      <option name="closed" value="true" />
+      <created>1739125719803</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1739125719803</updated>
+    </task>
+    <task id="LOCAL-00014" summary="refact: change style of Wordle">
+      <option name="closed" value="true" />
+      <created>1739135796712</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1739135796712</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix: fix bug that not enables the new game button on end game">
+      <option name="closed" value="true" />
+      <created>1739589136297</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1739589136297</updated>
+    </task>
+    <task id="LOCAL-00016" summary="refact: new styles to win modal">
+      <option name="closed" value="true" />
+      <created>1739589751950</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1739589751950</updated>
+    </task>
+    <task id="LOCAL-00017" summary="refact: new styles to win modal">
+      <option name="closed" value="true" />
+      <created>1739589756291</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1739589756291</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +297,19 @@
     <MESSAGE value="feat: now index does not use layout. It is now independent" />
     <MESSAGE value="feat: now layout has the footer" />
     <MESSAGE value="feat: init modal for hints in Wordle" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: init modal for hints in Wordle" />
+    <MESSAGE value="feat: untracked file added" />
+    <MESSAGE value="Merge" />
+    <MESSAGE value="feat: added credits modal" />
+    <MESSAGE value="feat: added new images and characters to Slide Puzzle" />
+    <MESSAGE value="feat:full refactor about all logistic" />
+    <MESSAGE value="refact: new images to batman and wonde woman" />
+    <MESSAGE value="refact: first visual changes in main page" />
+    <MESSAGE value="refact: finished main page" />
+    <MESSAGE value="refact: updated files" />
+    <MESSAGE value="refact: change style of Slide Puzzle" />
+    <MESSAGE value="refact: change style of Wordle" />
+    <MESSAGE value="fix: fix bug that not enables the new game button on end game" />
+    <MESSAGE value="refact: new styles to win modal" />
+    <option name="LAST_COMMIT_MESSAGE" value="refact: new styles to win modal" />
   </component>
 </project>

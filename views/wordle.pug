@@ -3,13 +3,23 @@ extends layout
 block content
     head
         link(rel='stylesheet', href='/stylesheets/wordle.css')
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=replay")
+
 
     div.game_container
         div#game
-        div.container.btns-container
-            button.btn.btn-primary.btn-newgame#btn-newgame(type="button") New Game 👾
-            button.btn.btn-primary.btn-instructions#btn-instructions(type="button") Instructions 📝
-            button.btn.btn-primary.btn-instructions#btn-hints(type="button") Hints 🔍
+        div.container.btns-container.btns-container-wordle
+            button.btn.btn-primary.btn-newgame.text-center#btn-newgame(type="button" disabled=true)
+                span.material-symbols-outlined replay
+                |  New Game
+            button.btn.btn-primary.btn-instructions#btn-instructions(type="button")
+                svg(xmlns="http://www.w3.org/2000/svg", height="24px", viewBox="0 -960 960 960", width="24px", fill="undefined")
+                    path(d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-640v560h560v-560h-80v280l-100-60-100 60v-280H200Zm0 560v-560 560Z")
+                | Instructions
+            button.btn.btn-primary.btn-hints#btn-hints(type="button")
+                svg(xmlns="http://www.w3.org/2000/svg", height="24px", viewBox="0 -960 960 960", width="24px", fill="undefined")
+                    path(d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-640v560h560v-560h-80v280l-100-60-100 60v-280H200Zm0 560v-560 560Z")
+                | Hints
         .keyboard-container
           each row in [['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'], ['Z', 'X', 'C', 'V', 'B', 'N', 'M'],['Backspace', 'Enter']]
             .keyboard-row
@@ -19,29 +29,22 @@ block content
     .modal.fade#WinModalCenter(tabindex="-1", role="dialog", aria-labelledby="WinModalCenter", aria-hidden="true", data-backdrop="static")
         .modal-dialog.modal-dialog-centered(role="document")
             .modal-content
-                .modal-header
+                .modal-header.win-modal-header
                     h5.modal-title#FinalModalTitle
                         span(aria-hidden="true")
-                .modal-body#modal-winner-body
-                .modal-footer
-                    button.btn.btn-secondary.m-auto.close(type="button", data-dismiss="modal") Close
+                .modal-footer.win-modal-footer
+                    button.btn.m-auto.close.btn-close-modal(type="button", data-dismiss="modal") Close
 
     .modal.fade#HintModalCenter(tabindex="-1", role="dialog", aria-labelledby="HintModalCenter", aria-hidden="true", data-backdrop="static")
         .modal-dialog.modal-dialog-centered(role="document")
             .modal-content
-                .modal-header
-                    h5.modal-title#HintModalTitle Hints
-                        span(aria-hidden="true")
                 .modal-body#modal-hint-body
                 .modal-footer
-                    button.btn.btn-secondary.m-auto.close(type="button", data-dismiss="modal") Close
+                    button.btn.m-auto.close.btn-close-modal(type="button", data-dismiss="modal") Close
 
     .modal.fade#instructions-modal(tabindex="-1", role="dialog", aria-labelledby="instructions-modal", aria-hidden="true", data-backdrop="static")
         .modal-dialog.modal-dialog-centered(role="document")
             .modal-content
-                .modal-header
-                    h5.modal-title Instructions 📝
-                        span(aria-hidden="true")
                 .modal-body
                     h6 English:
                     ol(type="1")
@@ -62,5 +65,5 @@ block content
                         li Hay un número limitado de 7 intentos
                         li Si deseas jugar otra partida selecciona el botón de "New Game"
                 .modal-footer
-                    button.btn.btn-secondary.m-auto.close(type="button", data-dismiss="modal") Close
+                    button.btn.m-auto.close.btn-close-modal(type="button", data-dismiss="modal") Close
     script(type="module" src='/javascripts/wordle.js')

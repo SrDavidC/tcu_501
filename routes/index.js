@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Choose your game'});
+  res.render('index', { title: 'Play & Learn'});
 });
 
 router.get('/slide-puzzle', function(req, res, next) {
@@ -12,6 +12,10 @@ router.get('/slide-puzzle', function(req, res, next) {
 
 router.get('/wordle', function(req, res, next) {
   res.render('wordle', { title: 'Wordle'});
+});
+
+router.get("/credits", function (req, res) {
+  res.render('credits', {title: 'Credits'})
 });
 
 

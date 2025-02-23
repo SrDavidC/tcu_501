@@ -1,21 +1,107 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: #F4E8E3;
+  font-family: "Asap", serif;
+  font-style: normal;
+  background-color: #5B5BEF;
 }
+
+.main_title_container {
+  padding: 20px;
+  margin-top: 50px;
+}
+.main_title {
+
+  font-family: "Modak", serif;
+  font-style: normal;
+  font-size: 10vw;
+
+}
+.sub_title {
+  font-family: "Asap", serif;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+.introduction_text {
+  font-family: "Asap", serif;
+  font-weight: 350;
+  color: #FFFFFF;
+  font-size: 3vh;
+}
+
+.main_title_1 {
+  color: #FF4F81;
+}
+.main_title_2 {
+  color: #FFFFFF;
+}
+.main_title_3 {
+  color: #3BE8B0;
+}
+
 
 a {
   color: #00B7FF;
 }
 
+.about-us-btn {
+  background-color: #14D4F4;
+  box-shadow: #039cb5 3px 3px;
+}
+
+.btns-main {
+  height: 10vh;
+  width: 40vh;
+  border-radius: 300px;
+  color: #FFFFFF;
+  font-size: 3vh;
+  font-weight: 900;
+}
+
+.credits-btn {
+  background: #3BE8B0;
+  box-shadow: #01b27f 3px 3px;
+  color: #FFFFFF;
+}
+
 #navbar {
-  background-color: #44A49C;
+  background-color: #5B5BEF;
   margin: 0;
   color: white;
   overflow: hidden;
   display: flex;
 }
 
-#navbar div .navbar-header {
+.games-section {
+  background-color: #14D4F4;
+  border-radius: 400px;
+  padding: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-games-title {
+  font-weight: 900;
+}
+
+
+.submenu-container {
+  padding: 50px;
+}
+
+.games-submenu {
+  background-color: #5B5BEF;
+  border-radius: 500px;
+  padding: 10px;
+}
+
+.submenu_title {
+  font-family: "Modak", serif;
+  font-style: normal;
+  font-size: 3vw;
+  color: #FFFFFF;
+  margin: auto;
+}
+
+#navbar div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,6 +131,7 @@ a {
   align-items: center;
   justify-content: center;
   margin: 40px;
+  gap: 40px;
 }
 
 .game_container {
@@ -97,14 +184,6 @@ img.game_logo {
   line-height: 1.8;
 }
 
-.btn-newgame {
-  background-color: #FC5C5C;
-}
-
-.btn-newgame:hover {
-  background-color: #f17d7d;
-}
-
 .btns-container > * {
   margin: 30px;
 }
@@ -117,13 +196,212 @@ img.game_logo {
 }
 
 .footer {
-  background-color: #44A49C;
+  background-color: #3BE8B0;
 }
 
-.footer img {
-  height: 10%;
-  width: 10%;
-}
 .btn.btn-primary[disabled] {
   background-color: #a19a9a;
 }
+.btn-about-us {
+  min-width: 125px;
+  min-height: 50px;
+  background: none;
+  color: #FFFF;
+
+  font-weight: bold;
+  border-color: #FFFF;
+  margin-left: auto;
+}
+
+.modal-body {
+  background-color: #f0f8ff;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #444;
+}
+
+/* Modal Header */
+.modal-header {
+  background-color: #44A49C;
+  font-size: 1.5rem;
+  border-bottom: 3px solid #339b8b;
+}
+
+/* Text */
+.modal-body h2 {
+  color: #ff6347;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.modal-body p {
+  color: #008080;
+  font-size: 1.1rem;
+}
+
+/* Close Button */
+#btn-close {
+  background-color: #44A49C;
+  font-size: 1.2rem;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+}
+
+#btn-close:hover {
+  background-color: #339b8b;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.modal-content {
+  border-radius: 20px;
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.btn-close-about-us {
+  background-color: #44A49C;
+}
+
+.btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.about-us-btn:hover {
+  background-color: #dc3545;
+}
+
+.credits-btn:hover {
+  background-color: #dc3545;
+}
+
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.navbar-header{
+  font-family: "Modak", serif;
+  font-style: normal;
+  font-size: 3vw;
+  color: #FFFFFF;
+  margin: auto;
+  background-color: #5B5BEF;
+
+}
+
+.colaborators-container {
+  font-size: 4vh;
+}
+
+.arrowback {
+  font-size: 8vh;
+  color: #FFFFFF;
+}
+.footer-logo {
+  height: 7vh;
+  width: 7vw;
+}
+
+.footer-logo:hover {
+  opacity: 0.8;
+}
+
+#btn-newgame {
+  width: 15vw;
+  height: 7vh;
+  background-color: #FFFFFF;
+  box-shadow: #8e8e93 3px 3px;
+  border-color: #FFFFFF;
+  border-radius: 75px;
+  color: black;
+}
+
+#btn-newgame span {
+  color: black;
+}
+#btn-instructions {
+  width: 15vw;
+  height: 7vh;
+  background-color: #FFFFFF;
+  box-shadow: #8e8e93 3px 3px;
+  border-color: #FFFFFF;
+  border-radius: 75px;
+  color: black;
+}
+
+#btn-instructions span{
+  color: black;
+}
+
+.modal-body {
+  background-color: #14D4F4;
+  color: #FFFFFF;
+  font-family: "Asap", serif;
+  font-style: normal;
+}
+
+.modal-footer {
+  background-color: #14D4F4;
+}
+
+.btn-close-modal {
+  width: 15vw;
+  height: 7vh;
+  background-color: #FFFFFF;
+  box-shadow: #8e8e93 3px 3px;
+  border-color: #FFFFFF;
+  border-radius: 75px;
+  color: black;
+}
+
+.btn-close-modal:hover {
+  opacity: 75%;
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.btn-hints:hover {
+  opacity: 75%;
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.btn-hints {
+  width: 15vw;
+  height: 7vh;
+  background-color: #FFFFFF;
+  box-shadow: #8e8e93 3px 3px;
+  border-color: #FFFFFF;
+  border-radius: 75px;
+  color: black;
+}
+
+.hints-header {
+  font-weight: 900;
+  font-size: xxx-large;
+}
+
+.hints-text {
+  font-weight: 200;
+  font-size: x-large;
+}
+
+
+

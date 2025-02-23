@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        title="Play & Learn"
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous")
+        link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+        link(href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet")
+        link(href='https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap', rel='stylesheet')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+block content
+    nav#navbar
+        div.container
+            a(href="/")
+                span(class='material-symbols-outlined').arrowback arrow_back
+            h1.navbar-header= 'Play & Learn'
+
+    div.credits-container.p-5
+        h1.credits-title.text-white CREDITS
+        div.colaborators-container
+            p.text-white <b>UI/UX Design - </b> Brandon Mims Arias
+            p.text-white <b> Developer - </b> David Alessandro Cerdas Alvarado <br>
+            p.text-white <b> Voicelines - </b> Sharon Rojas Medina <br>
+            p.text-white <b> Coordinator - </b> Mag. Roxana Chevez H. <br>
