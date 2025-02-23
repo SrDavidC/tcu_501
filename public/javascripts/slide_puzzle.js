@@ -109,7 +109,6 @@ function swapTiles() {
     otherTile.src = currImg;
 
     turns++;
-    updateTurnCount();
 }
 
 function isValidMove() {
@@ -123,12 +122,9 @@ function isValidMove() {
     return !CONFIG.allowOnlyAdjacentMoves || isAdjacent;
 }
 
-function updateTurnCount() {
-    document.getElementById("turns").innerText = turns;
-}
-
 function handleWin() {
     if (checkWinner()) {
+        console.log("asd22")
         playWinSound().then(showWinModal);
     }
 }

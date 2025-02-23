@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a1b5a86-f80c-46c6-9b71-ae6b424d9e87" name="Changes" comment="refact: new styles to win modal">
+    <list default="true" id="3a1b5a86-f80c-46c6-9b71-ae6b424d9e87" name="Changes" comment="fix: new index title">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/wordle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/wordle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/slide_puzzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/slide_puzzle.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +138,9 @@
       <workItem from="1738439307950" duration="5343000" />
       <workItem from="1739120646500" duration="8007000" />
       <workItem from="1739408236167" duration="11000" />
-      <workItem from="1739571244473" duration="2413000" />
+      <workItem from="1739571244473" duration="2551000" />
+      <workItem from="1739658489900" duration="20000" />
+      <workItem from="1740278312615" duration="2122000" />
     </task>
     <task id="LOCAL-00001" summary="feat: now index does not use layout. It is now independent">
       <option name="closed" value="true" />
@@ -276,7 +278,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739589756291</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="fix: resolved bug related of backspace and enter buttons in wordle.js">
+      <option name="closed" value="true" />
+      <created>1739590299351</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1739590299351</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix: new index title">
+      <option name="closed" value="true" />
+      <created>1740278968344</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1740278968344</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +328,8 @@
     <MESSAGE value="refact: change style of Wordle" />
     <MESSAGE value="fix: fix bug that not enables the new game button on end game" />
     <MESSAGE value="refact: new styles to win modal" />
-    <option name="LAST_COMMIT_MESSAGE" value="refact: new styles to win modal" />
+    <MESSAGE value="fix: resolved bug related of backspace and enter buttons in wordle.js" />
+    <MESSAGE value="fix: new index title" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: new index title" />
   </component>
 </project>
