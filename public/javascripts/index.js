@@ -16,7 +16,7 @@ document.getElementById("back-btn")?.addEventListener("click", () => {
   window.location.href = INDEX;
 });
 
-document.getElementById("about-us-btn").addEventListener("click", () => {
+document.getElementById("about-us-btn")?.addEventListener("click", () => {
   document.getElementById('btn-close').disabled = false;
     let modalElement = new bootstrap.Modal(document.getElementById('about-us-modal'));
     modalElement.show();
