@@ -124,7 +124,6 @@ function isValidMove() {
 
 function handleWin() {
     if (checkWinner()) {
-        console.log("asd22")
         playWinSound().then(showWinModal);
     }
 }
@@ -187,7 +186,7 @@ function initCharactersMap() {
             "The holiday commemorates the Battle of Rivas, made famous by the heroic actions of the National Hero, Juan Santamaria:" +
             " the \"Little Drummer Boy\".\n", "He is brave.", "Juan Santamaría was successful in his mission and his actions helped" +
             " Costa Ricans win the battle, Santamaria was killed by enemy fire.\n"]
-            , AUDIOS_HEROES_PATH + "Juan Santamaria.wav", "juan_santamaria"
+            , AUDIOS_HEROES_PATH + "Juan_Santamaria.wav", "juan_santamaria"
         )
     )
 
@@ -196,7 +195,7 @@ function initCharactersMap() {
             "She wrote and published the fairy tale collection \"Cuentos de mi tía Panchita\" and was the first female Costa Rican writer. \n"
             , "She was an intellectual, smart, brave and visionary woman.\n",
             "Carmen Lyra’s face is on the 20000 colones bill.\n"]
-        , AUDIOS_HEROES_PATH + "Carmen Lyra.wav", "carmen_lyra")
+        , AUDIOS_HEROES_PATH + "Carmen_Lyra.wav", "carmen_lyra")
     )
 
     charactersMap.set("shirley_cruz", new CharacterSP("Shirley Cruz", [
@@ -204,7 +203,7 @@ function initCharactersMap() {
             "She currently plays in the Chinese club Jiangsu Suning of the Chinese Women’s Super League.",
             "She was the first female professional soccer player in Costa Rica and is the most successful Central American player as a professional soccer player.",
             "She is an extraordinary athlete, strong, disciplined, confident and hard working. She is a leader."]
-        , AUDIOS_HEROES_PATH + "Shirley Cruz.wav", "shirley_cruz")
+        , AUDIOS_HEROES_PATH + "Shirley_Cruz.wav", "shirley_cruz")
     )
 
     charactersMap.set("superman", new CharacterSP("Superman", [
@@ -235,7 +234,7 @@ function initCharactersMap() {
                 "She also has great strength and speed.",
                 "Wonder Woman’s most special fighting tool is her Lasso of Truth. If she wraps this rope around a person and asks them questions, they tell the truth."
             ]
-            , AUDIOS_HEROES_PATH + "Wonder Woman.wav", "wonder_woman"
+            , AUDIOS_HEROES_PATH + "Wonder_Woman.wav", "wonder_woman"
         ),
     )
 
@@ -244,7 +243,7 @@ function initCharactersMap() {
                 "He can swim fast and talk to fish.",
                 "He is very strong in the water. Aquaman takes care of the sea and its animals.",
             ]
-            , AUDIOS_HEROES_PATH + "Wonder Woman.wav", "aquaman"
+            , AUDIOS_HEROES_PATH + "Aquaman.wav", "aquaman"
         ),
     )
 
@@ -253,7 +252,7 @@ function initCharactersMap() {
                 "He runs very, very fast. He is faster than a car or a plane.",
                 "The Flash helps people very quickly. He is also very kind.",
             ]
-            , AUDIOS_HEROES_PATH + "Wonder Woman.wav", "flash"
+            , AUDIOS_HEROES_PATH + "The_Flash.wav", "flash"
         ),
     )
 
@@ -263,7 +262,7 @@ function initCharactersMap() {
                 "He is very strong.",
                 "Thor can make lightning with his hammer. He protects people from bad guys."
             ]
-            , AUDIOS_HEROES_PATH + "Wonder Woman.wav", "thor"
+            , AUDIOS_HEROES_PATH + "Thor.wav", "thor"
         ),
     )
 
@@ -273,7 +272,7 @@ function initCharactersMap() {
                 "Iron Man builds cool machines.",
                 "He uses them to save the world."
             ]
-            , AUDIOS_HEROES_PATH + "Wonder Woman.wav", "ironman"
+            , AUDIOS_HEROES_PATH + "Iron_Man.wav", "ironman"
         ),
     )
 
@@ -283,7 +282,7 @@ function initCharactersMap() {
                 "He swings with his webs. He is fast and strong.",
                 "He helps people when they are in danger."
             ]
-            , AUDIOS_HEROES_PATH + "Wonder Woman.wav", "spiderman"
+            , AUDIOS_HEROES_PATH + "Spider_Man.wav", "spiderman"
         ),
     )
 

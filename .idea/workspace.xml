@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a1b5a86-f80c-46c6-9b71-ae6b424d9e87" name="Changes" comment="fix: new index title">
+    <list default="true" id="3a1b5a86-f80c-46c6-9b71-ae6b424d9e87" name="Changes" comment="fix: fix related to null button on many pages">
+      <change afterPath="$PROJECT_DIR$/public/sounds/heroes/Aquaman.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sounds/heroes/Iron_Man.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sounds/heroes/Spider_Man.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sounds/heroes/The_Flash.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sounds/heroes/Thor.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/javascripts/slide_puzzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/slide_puzzle.js" afterDir="false" />
     </list>
@@ -51,37 +56,42 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2dx3Aopt4ZD74NwqoXYTNcmp2gI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.11.1&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.11.30&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/XPC_DC/WebstormProjects/tcu_501/public/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.5\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "javascript.nodejs.core.library.configured.version": "20.11.1",
+    "javascript.nodejs.core.library.typings.version": "20.11.30",
+    "last_opened_file_path": "C:/Users/XPC_DC/WebstormProjects/tcu_501/public/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.5\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\XPC_DC\WebstormProjects\tcu_501\public\images" />
       <recent name="C:\Users\XPC_DC\WebstormProjects\tcu_501\public\images\slide_puzzle\aquaman" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\XPC_DC\WebstormProjects\tcu_501\public\sounds\heroes" />
       <recent name="C:\Users\XPC_DC\WebstormProjects\tcu_501\public\images" />
       <recent name="C:\Users\XPC_DC\WebstormProjects\tcu_501\public\images\slide_puzzle\aquaman" />
     </key>
@@ -140,7 +150,7 @@
       <workItem from="1739408236167" duration="11000" />
       <workItem from="1739571244473" duration="2551000" />
       <workItem from="1739658489900" duration="20000" />
-      <workItem from="1740278312615" duration="2122000" />
+      <workItem from="1740278312615" duration="2722000" />
     </task>
     <task id="LOCAL-00001" summary="feat: now index does not use layout. It is now independent">
       <option name="closed" value="true" />
@@ -294,7 +304,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740278968344</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="refact: new images to superman">
+      <option name="closed" value="true" />
+      <created>1740281045684</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1740281045684</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fix: fix related to null button on many pages">
+      <option name="closed" value="true" />
+      <created>1740281285180</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1740281285180</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,6 +338,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="feat: now index does not use layout. It is now independent" />
     <MESSAGE value="feat: now layout has the footer" />
     <MESSAGE value="feat: init modal for hints in Wordle" />
@@ -330,6 +357,8 @@
     <MESSAGE value="refact: new styles to win modal" />
     <MESSAGE value="fix: resolved bug related of backspace and enter buttons in wordle.js" />
     <MESSAGE value="fix: new index title" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: new index title" />
+    <MESSAGE value="refact: new images to superman" />
+    <MESSAGE value="fix: fix related to null button on many pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fix related to null button on many pages" />
   </component>
 </project>
